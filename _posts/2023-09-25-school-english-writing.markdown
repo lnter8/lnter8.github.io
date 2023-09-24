@@ -2,7 +2,7 @@
 layout: post
 title:  "영어 2차 쓰기 평가 연습"
 date:   2023-09-25 02:47:08 +0900
-categories: Schoolwork
+categories: [School]
 permalink: /school/23/english1
 ---
 
