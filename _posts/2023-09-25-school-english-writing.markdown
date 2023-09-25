@@ -8,14 +8,17 @@ permalink: /school/23/english1
 
 자동으로 쓰기 평가의 문장을 무작위하게 고르고, 올바르게 직역했는지 확인합니다.  
 대소문자, 띄어쓰기, 문장 부호 등도 주어진 학습지와 정확히 같아야 정답으로 인식합니다.   
+컴퓨터라면 아래의 "긴 입력" 버튼으로 입력칸을 늘릴 수 있습니다.   
 포스트의 하단에서 답안을 확인할 수 있습니다.    
 
 <div>
   <p id="question-text">이 앱은 사람들이 다른 사람들로부터 빌릴 수 있는 물건들을 쉽게 찾도록 돕는다.</p>
-  <input id="answer-input" type="text" style="width: 625px; font-size: 16px; height: 20px" placeholder="직역한 문장">
-  <button onclick="textEntered()"> 입력 </button> <button onclick="shuffleMode()" style="margin-left: 20px;">셔플(기본)</button> <button onclick="fullRandomMode()">완전 랜덤</button>
+  <input id="answer-input" type="text" style="width: 400px; font-size: 16px; height: 20px" placeholder="직역한 문장"> <button onclick="textEntered()"> 입력 </button> 
   <p id="stats">이곳에 정답을 맞힌 횟수, 비율 등이 표시됩니다.</p>
   <p id="correct-row">주어진 문장을 영작하세요.</p>
+  <br>
+  <button onclick="shuffleMode()">기본 셔플</button> <button onclick="fullRandomMode()">랜덤 셔플</button>
+  <button onclick="shortInput()">짧은 입력</button> <button onclick="longInput()">긴 입력</button>
 </div>
 <script>
   var questions = [
