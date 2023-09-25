@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-09-25T04:06:55+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Uselessness</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">영어 2차 쓰기 평가 연습</title><link href="http://localhost:4000/school/23/english1" rel="alternate" type="text/html" title="영어 2차 쓰기 평가 연습" /><published>2023-09-25T02:47:08+09:00</published><updated>2023-09-25T02:47:08+09:00</updated><id>http://localhost:4000/school/23/school-english-writing</id><content type="html" xml:base="http://localhost:4000/school/23/english1"><![CDATA[<p>자동으로 쓰기 평가의 문장을 무작위하게 고르고, 올바르게 직역했는지 확인합니다.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-09-25T17:17:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Uselessness</title><subtitle>잡다한 것들 모아놓는 사이트</subtitle><entry><title type="html">영어 2차 쓰기 평가 연습</title><link href="http://localhost:4000/school/23/english1" rel="alternate" type="text/html" title="영어 2차 쓰기 평가 연습" /><published>2023-09-25T02:47:08+09:00</published><updated>2023-09-25T02:47:08+09:00</updated><id>http://localhost:4000/school/23/school-english-writing</id><content type="html" xml:base="http://localhost:4000/school/23/english1"><![CDATA[<p>자동으로 쓰기 평가의 문장을 무작위하게 고르고, 올바르게 직역했는지 확인합니다.<br />
 대소문자, 띄어쓰기, 문장 부호 등도 주어진 학습지와 정확히 같아야 정답으로 인식합니다. <br />
 포스트의 하단에서 답안을 확인할 수 있습니다.</p>
 
 <div>
   <p id="question-text">이 앱은 사람들이 다른 사람들로부터 빌릴 수 있는 물건들을 쉽게 찾도록 돕는다.</p>
-  <input id="answer-input" type="text" size="24" placeholder="직역한 문장" />
-  <button onclick="textEntered()">입력</button>
+  <input id="answer-input" type="text" style="width: 500px; font-size: 14px; height: 15px" placeholder="직역한 문장" />
+  <button onclick="textEntered()"> 입력 </button> <button onclick="shuffleMode()" style="margin-left: 20px;">셔플(기본)</button> <button onclick="fullRandomMode()">완전 랜덤</button>
+  <p id="stats">이곳에 정답을 맞힌 횟수, 비율 등이 표시됩니다.</p>
   <p id="correct-row">주어진 문장을 영작하세요.</p>
 </div>
 <script>
@@ -19,7 +20,7 @@
     "영국에서 태어났지만, 그는 지금 파리를 그의 고향으로 여긴다.",
     "일반적으로 말해, 더 큰 동물들이 더 작은 동물들보다 더 오래 산다.",
     "피터가 저녁을 다 먹었기 때문에, 우리는 산책을 했다.",
-    "그 유명인들이 도착하여 자리들에 않자, 파티가 시작되었다.",
+    "그 유명인들이 도착하여 자리들에 앉자, 파티가 시작되었다.",
     "그녀는 그를 모방하는 대신에 그녀 자신의 스타일을 개발했어야 했다.",
     "정부는 우리 경제가 성장하도록 돕기 위해 노력을(시도를) 해야 한다.",
     "나는 내 개인 정보를 나누어 주지(알려 주지) 않으려고 노력한다.",
@@ -93,19 +94,57 @@
       textEntered();
     }
   });
+
+  var shuffle = 0;
+  newShuffle();
+
+  function newShuffle() {
+    var temp = shuffle;
+    shuffle = Math.ceil(Math.random()*(questions.length-1));
+    while (questions.length % shuffle == 0 || shuffle == temp) {
+      shuffle = Math.ceil(Math.random()*(questions.length-1));
+    }
+  }
+
+  var attempt = 0;
+  var correct = 0;
   
   function textEntered() {
-    if (input.value === answers[curtextno]) combo++;
+    if (input.value === answers[curtextno]) {
+      combo++;
+      correct++;
+    }
     else combo = 0;
     combotext = combo + "연속 정답!";
-    if (combo == 0) combotext = "오답입니다.\n입력 값: \"" + input.value + "\",\n실제 답: \"" + answers[curtextno] + "\""
+    if (combo == 0) combotext = "오답입니다. 입력 값: \"" + input.value + "\", 실제 답: \"" + answers[curtextno] + "\""
     input.value = "";
     document.getElementById('correct-row').innerHTML = combotext;
-    var qcomp = curtextno;
-    curtextno = Math.floor(Math.random()*questions.length);
-    if (qcomp == curtextno) curtextno++;
+    
+    attempt++;
+    if (shuffle == 0) {
+      var qcomp = curtextno;
+      curtextno = Math.floor(Math.random()*questions.length);
+      if (qcomp == curtextno) curtextno++;
+    }
+    else {
+      curtextno += shuffle;
+    }
     curtextno %= questions.length;
+    if (shuffle > 0 && attempt % questions.length == 0) newShuffle();
+
+    var correctp = "PERFECT";
+    if (correct < attempt) correctp = Math.floor(correct / attempt * 10000)/100;
+    stattext = "현재 정답률: " + correct + " / " + attempt + " = " + correctp + "%";
+    document.getElementById('stats').innerHTML = stattext;
     document.getElementById('question-text').innerHTML = questions[curtextno];
+  }
+
+  function fullRandomMode() {
+    shuffle = 0;
+  }
+
+  function shuffleMode() {
+    newShuffle();
   }
 </script>
 
@@ -138,7 +177,7 @@ Generally speaking, bigger animals live longer than smaller animals.
 9. 피터가 저녁을 다 먹었기 때문에, 우리는 산책을 했다.
 Peter having finished dinner, we went out for a walk.
 
-10. 그 유명인들이 도착하여 자리들에 않자, 파티가 시작되었다.
+10. 그 유명인들이 도착하여 자리들에 앉자, 파티가 시작되었다.
 The celebrities arriving and taking seats, the party began.
 
 11. 그녀는 그를 모방하는 대신에 그녀 자신의 스타일을 개발했어야 했다.
@@ -209,7 +248,7 @@ Robots that have AI can percieve environments and make decisions.
 
 33. 한 로봇 떼는 서로서로 의사소통할 수 있는 로봇들의 한 거대한 집단이다.
 A robot swarm is a large group of robots that can communicate with one another.
-</code></pre></div></div>]]></content><author><name></name></author><category term="Schoolwork" /><summary type="html"><![CDATA[자동으로 쓰기 평가의 문장을 무작위하게 고르고, 올바르게 직역했는지 확인합니다. 대소문자, 띄어쓰기, 문장 부호 등도 주어진 학습지와 정확히 같아야 정답으로 인식합니다. 포스트의 하단에서 답안을 확인할 수 있습니다.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/basics/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2023-09-13T22:03:08+09:00</published><updated>2023-09-13T22:03:08+09:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/basics/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+</code></pre></div></div>]]></content><author><name></name></author><category term="School" /><summary type="html"><![CDATA[자동으로 쓰기 평가의 문장을 무작위하게 고르고, 올바르게 직역했는지 확인합니다. 대소문자, 띄어쓰기, 문장 부호 등도 주어진 학습지와 정확히 같아야 정답으로 인식합니다. 포스트의 하단에서 답안을 확인할 수 있습니다.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/basics/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2023-09-13T22:03:08+09:00</published><updated>2023-09-13T22:03:08+09:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/basics/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -225,4 +264,4 @@ A robot swarm is a large group of robots that can communicate with one another.
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>

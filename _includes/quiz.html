@@ -10,18 +10,56 @@
       textEntered();
     }
   });
+
+  var shuffle = 0;
+  newShuffle();
+
+  function newShuffle() {
+    var temp = shuffle;
+    shuffle = Math.ceil(Math.random()*(questions.length-1));
+    while (questions.length % shuffle == 0 || shuffle == temp) {
+      shuffle = Math.ceil(Math.random()*(questions.length-1));
+    }
+  }
+
+  var attempt = 0;
+  var correct = 0;
   
   function textEntered() {
-    if (input.value === answers[curtextno]) combo++;
+    if (input.value === answers[curtextno]) {
+      combo++;
+      correct++;
+    }
     else combo = 0;
     combotext = combo + "연속 정답!";
     if (combo == 0) combotext = "오답입니다. 입력 값: \"" + input.value + "\", 실제 답: \"" + answers[curtextno] + "\""
     input.value = "";
     document.getElementById('correct-row').innerHTML = combotext;
-    var qcomp = curtextno;
-    curtextno = Math.floor(Math.random()*questions.length);
-    if (qcomp == curtextno) curtextno++;
+    
+    attempt++;
+    if (shuffle == 0) {
+      var qcomp = curtextno;
+      curtextno = Math.floor(Math.random()*questions.length);
+      if (qcomp == curtextno) curtextno++;
+    }
+    else {
+      curtextno += shuffle;
+    }
     curtextno %= questions.length;
+    if (shuffle > 0 && attempt % questions.length == 0) newShuffle();
+
+    var correctp = "PERFECT";
+    if (correct < attempt) correctp = Math.floor(correct / attempt * 10000)/100;
+    stattext = "현재 정답률: " + correct + " / " + attempt + " = " + correctp + "%";
+    document.getElementById('stats').innerHTML = stattext;
     document.getElementById('question-text').innerHTML = questions[curtextno];
+  }
+
+  function fullRandomMode() {
+    shuffle = 0;
+  }
+
+  function shuffleMode() {
+    newShuffle();
   }
 </script>
