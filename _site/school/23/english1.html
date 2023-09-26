@@ -121,7 +121,7 @@
     "수색구조 로봇들은 인간들에게 위험한 재난지역들로 들어갈 수 있다.",
     "내 여동생은 그 고급스러운 가방을 살 수 있기 위해서 돈을 모았다.",
     "만약 내 고양이가 그 냉장고를 열 수 있다면 그것은 내 음식 모두를 먹을 텐데.",
-    "이 문제를 해결하기 위해서, 우리는 빌려주는 사람들에게 주기적으로 자신들의 물품들의 사진들을 엄데이트할 것을 요청하고 있다.",
+    "이 문제를 해결하기 위해서, 우리는 빌려주는 사람들에게 주기적으로 자신들의 물품들의 사진들을 업데이트할 것을 요청하고 있다.",
     "그녀가 피곤하지 않다면 그녀는 밤새 공부를 할 텐데.",
     "우리는 텐트를 빌릴 수 있고 우리 강아지를 돌봐줄 누군가를 찾을 수 있다.",
     "만약 컴퓨터가 없다면 나는 그것을 끝낼 수 없을 텐데.",
@@ -181,14 +181,21 @@
     }
   });
 
-  var shuffle = 0;
+  var doshuffle = true;
+  var shuffle = [];
   newShuffle();
 
   function newShuffle() {
-    var temp = shuffle;
-    shuffle = Math.ceil(Math.random()*(questions.length-1));
-    while (questions.length % shuffle == 0 || shuffle == temp) {
-      shuffle = Math.ceil(Math.random()*(questions.length-1));
+    shuffle.length = 0;
+    for (var i = 0; i < questions.length; i++) {
+      shuffle.push(i);
+    }
+    var temp;
+    for (var i = 0; i < questions.length-1; i++) {
+      var j = Math.random()*(questions.length-i)+i
+      temp = shuffle[i];
+      shuffle[i] = shuffle[j]
+      shuffle[j] = temp;
     }
   }
 
@@ -207,16 +214,16 @@
     document.getElementById('correct-row').innerHTML = combotext;
     
     attempt++;
-    if (shuffle == 0) {
+    if (!doshuffle) {
       var qcomp = curtextno;
       curtextno = Math.floor(Math.random()*questions.length);
       if (qcomp == curtextno) curtextno++;
     }
     else {
-      curtextno += shuffle;
+      curtextno = shuffle[attempt%questions.length];
     }
     curtextno %= questions.length;
-    if (shuffle > 0 && attempt % questions.length == 0) newShuffle();
+    if (doshuffle && attempt % questions.length == 0) newShuffle();
 
     var correctp = "PERFECT";
     if (correct < attempt) correctp = Math.floor(correct / attempt * 10000)/100;
@@ -226,10 +233,11 @@
   }
 
   function fullRandomMode() {
-    shuffle = 0;
+    doshuffle = false;
   }
 
   function shuffleMode() {
+    doshuffle = true;
     newShuffle();
   }
 
@@ -316,7 +324,7 @@ My sister saved money so that she could buy the luxurious bag.
 24. 만약 내 고양이가 그 냉장고를 열 수 있다면 그것은 내 음식 모두를 먹을 텐데.
 If my cat could open the fridge, it would eat all my food.
 
-25. 이 문제를 해결하기 위해서, 우리는 빌려주는 사람들에게 주기적으로 자신들의 물품들의 사진들을 엄데이트할 것을 요청하고 있다.
+25. 이 문제를 해결하기 위해서, 우리는 빌려주는 사람들에게 주기적으로 자신들의 물품들의 사진들을 업데이트할 것을 요청하고 있다.
 To fix this issue, we are asking lenders to update the pictures of their items regularly.
 
 26. 그녀가 피곤하지 않다면 그녀는 밤새 공부를 할 텐데.

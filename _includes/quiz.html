@@ -13,16 +13,16 @@
 
   var doshuffle = true;
   var shuffle = [];
-  for (var i = 0; i < questions.length; i++) {
-    shuffle.push(i);
-  }
-
   newShuffle();
 
   function newShuffle() {
+    shuffle.length = 0;
+    for (var i = 0; i < questions.length; i++) {
+      shuffle.push(i);
+    }
     var temp;
     for (var i = 0; i < questions.length-1; i++) {
-      var j = Math.random()*(questions.length-i)+i
+      var j = Math.floor(Math.random()*(questions.length-i)+i)
       temp = shuffle[i];
       shuffle[i] = shuffle[j]
       shuffle[j] = temp;

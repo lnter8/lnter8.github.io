@@ -169,7 +169,7 @@ My sister saved money so that she could buy the luxurious bag.
 24. 만약 내 고양이가 그 냉장고를 열 수 있다면 그것은 내 음식 모두를 먹을 텐데.
 If my cat could open the fridge, it would eat all my food.
 
-25. 이 문제를 해결하기 위해서, 우리는 빌려주는 사람들에게 주기적으로 자신들의 물품들의 사진들을 엄데이트할 것을 요청하고 있다.
+25. 이 문제를 해결하기 위해서, 우리는 빌려주는 사람들에게 주기적으로 자신들의 물품들의 사진들을 업데이트할 것을 요청하고 있다.
 To fix this issue, we are asking lenders to update the pictures of their items regularly.
 
 26. 그녀가 피곤하지 않다면 그녀는 밤새 공부를 할 텐데.
