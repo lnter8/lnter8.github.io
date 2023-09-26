@@ -11,14 +11,21 @@
     }
   });
 
-  var shuffle = 0;
+  var doshuffle = true;
+  var shuffle = [];
+  for (var i = 0; i < questions.length; i++) {
+    shuffle.push(i);
+  }
+
   newShuffle();
 
   function newShuffle() {
-    var temp = shuffle;
-    shuffle = Math.ceil(Math.random()*(questions.length-1));
-    while (questions.length % shuffle == 0 || shuffle == temp) {
-      shuffle = Math.ceil(Math.random()*(questions.length-1));
+    var temp;
+    for (var i = 0; i < questions.length-1; i++) {
+      var j = Math.random()*(questions.length-i)+i
+      temp = shuffle[i];
+      shuffle[i] = shuffle[j]
+      shuffle[j] = temp;
     }
   }
 
@@ -37,16 +44,16 @@
     document.getElementById('correct-row').innerHTML = combotext;
     
     attempt++;
-    if (shuffle == 0) {
+    if (!doshuffle) {
       var qcomp = curtextno;
       curtextno = Math.floor(Math.random()*questions.length);
       if (qcomp == curtextno) curtextno++;
     }
     else {
-      curtextno += shuffle;
+      curtextno = shuffle[attempt%questions.length];
     }
     curtextno %= questions.length;
-    if (shuffle > 0 && attempt % questions.length == 0) newShuffle();
+    if (doshuffle && attempt % questions.length == 0) newShuffle();
 
     var correctp = "PERFECT";
     if (correct < attempt) correctp = Math.floor(correct / attempt * 10000)/100;
@@ -56,10 +63,11 @@
   }
 
   function fullRandomMode() {
-    shuffle = 0;
+    doshuffle = false;
   }
 
   function shuffleMode() {
+    doshuffle = true;
     newShuffle();
   }
 
