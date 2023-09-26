@@ -40,6 +40,7 @@
     else combo = 0;
     combotext = combo + "연속 정답!";
     if (combo == 0) combotext = "오답입니다. 입력 값: \"" + input.value + "\", 실제 답: \"" + answers[curtextno] + "\""
+    else combotext += " (\"" + input.value + ")\"";
     input.value = "";
     document.getElementById('correct-row').innerHTML = combotext;
     
