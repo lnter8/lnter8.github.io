@@ -88,7 +88,7 @@ permalink: /school/23/english1
     "We wear sunglasses so that we can protect our eyes from the sun.",
     "It helps pet owners find reliable people to look after their pets.",
     "In the past, robots performed only easy tasks that humans programmed them to do.",
-    "Robots that have AI can percieve environments and make decisions.",
+    "Robots that have AI can perceive environments and make decisions.",
     "A robot swarm is a large group of robots that can communicate with one another.",
   ];
 </script>
@@ -191,7 +191,7 @@ It helps pet owners find reliable people to look after their pets.
 In the past, robots performed only easy tasks that humans programmed them to do.
 
 32. AI를 가진 로봇들은 환경들을 인지하고 결정들을 만든다.
-Robots that have AI can percieve environments and make decisions.
+Robots that have AI can perceive environments and make decisions.
 
 33. 한 로봇 떼는 서로서로 의사소통할 수 있는 로봇들의 한 거대한 집단이다.
 A robot swarm is a large group of robots that can communicate with one another.
