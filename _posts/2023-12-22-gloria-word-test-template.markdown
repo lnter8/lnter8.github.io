@@ -32,7 +32,7 @@ permalink: /academy/gloria/word/template
 
 <div>
   <p>이곳에서 시험 단어를 변경할 수 있습니다. </p> <p id="listLoaded"></p>
-<textarea id="wordList" cols="75" rows="10" placeholder="단어 목록">
+<textarea id="wordList" cols="50" rows="10" placeholder="단어 목록">
 # <- 이 기호로 시작하거나 빈 줄은 인식하지 않습니다.
 # 띄어쓰기는 채점 중 인식되지 않습니다.
 # 형식: 단어/뜻/유의어/반의어/예문(단어:'')
@@ -42,7 +42,7 @@ permalink: /academy/gloria/word/template
 fragile/깨지기 쉬운,덧없는/delicate,transient/firm/Owl is a 'fragile', graceful creature.
 perk/특전/benefit//'Perks' offered by the firm include a car and free health insurance.
 hello/안녕///Say 'hello' to my sister.
-예문에 ' 2개가 없거나, / 5개로 이루어지지 않은 문장은 오류처리 됩니다.
+예문에 ' 2개가 없거나, / 5개로 이루어지지 않은 이런 문장은 오류처리 됩니다.
 </textarea>
   <br>
   <button onclick="shortList()">축소</button> <button onclick="longList()">확대</button> <button onclick="loadList()">로드</button> 

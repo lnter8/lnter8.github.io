@@ -303,14 +303,18 @@
   }
 
   var wordList = document.getElementById("wordList");
+
+  var listSize = 10;
   function shortList() {
-    wordList.cols = "75";
-    wordList.rows = "10";
+    if (listSize > 10) listSize -= 5;
+    wordList.cols = listSize*5 + "";
+    wordList.rows = listSize + "";
   }
 
   function longList() {
-    wordList.cols = "150";
-    wordList.rows = "20";
+    if (listSize < 20) listSize += 5;
+    wordList.cols = listSize*5 + "";
+    wordList.rows = listSize + "";
   }
 
   function forceCorrect() {
