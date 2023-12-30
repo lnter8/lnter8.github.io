@@ -25,7 +25,7 @@ permalink: /academy/gloria/word/template
 
 <div> 
   <p id="questionText">문제</p>
-  <input id="answerInput" type="text" style="width: 350px; font-size: 16px; height: 20px" placeholder=""> <button onclick="textEntered()">입력</button>
+  <input id="answerInput" type="text" style="width: 320px; font-size: 16px; height: 20px" placeholder=""> <button onclick="textEntered()">입력</button>
   <p id="grading">(정답 여부)</p> 
   <p id="wrongList">틀린 단어: X</p>
   <button onclick="forceCorrect()">정답 처리</button> <button onclick="skipQuestion()">문제 스킵</button>
@@ -37,7 +37,7 @@ permalink: /academy/gloria/word/template
 
 <div>
   <p>이곳에서 시험 단어를 변경할 수 있습니다. </p> <p id="listLoaded"></p>
-<textarea id="wordList" cols="50" rows="10" placeholder="단어 목록">
+<textarea id="wordList" cols="45" rows="10" placeholder="단어 목록">
 # <- 이 기호로 시작하거나 빈 줄은 인식하지 않습니다.
 # 띄어쓰기는 채점 중 인식되지 않습니다.
 # 형식: 단어/뜻/유의어/반의어/예문(단어:'')

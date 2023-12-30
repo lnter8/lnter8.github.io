@@ -307,13 +307,13 @@
   var listSize = 10;
   function shortList() {
     if (listSize > 10) listSize -= 5;
-    wordList.cols = listSize*5 + "";
+    wordList.cols = listSize*5-5 + "";
     wordList.rows = listSize + "";
   }
 
   function longList() {
     if (listSize < 20) listSize += 5;
-    wordList.cols = listSize*5 + "";
+    wordList.cols = listSize*5-5 + "";
     wordList.rows = listSize + "";
   }
 
