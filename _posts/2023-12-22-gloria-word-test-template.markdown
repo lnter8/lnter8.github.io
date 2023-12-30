@@ -6,7 +6,7 @@ categories: [Academy]
 permalink: /academy/gloria/word/template
 ---
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width*0.9, initial-scale=1.0">
 <style>
   p { margin: 8px 0px 8px 0px; }
 </style>
@@ -18,7 +18,7 @@ permalink: /academy/gloria/word/template
 <input type='checkbox' name='questionType' value='toKorean' checked>뜻:단어
 <input type='checkbox' name='questionType' value='toEnglish' checked>단어:뜻
 <input type='checkbox' name='questionType' value='synonym' checked>유/반의어
-<p id="checkboxError">원하는 문제 종류를 선택하세요. 1개 이상 선택해야 합니다.</p>
+<p id="checkboxError">원하는 문제 종류를 1개 이상 선택하세요.</p>
 <input type='checkbox' id="completeRandom" name='completeRandom' onClick="shuffleQuestion()">완전 랜덤 셔플
 <input type='checkbox' id="onlyWrongMode" name='onlyWrongMode' onClick="wrongModeCheck()">지금까지 틀린단어만 풀기
 <br>
