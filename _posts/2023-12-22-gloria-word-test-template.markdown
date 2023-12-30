@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "글로리아 단어 시험 템플릿"
+title:  "글로리아 단어 템플릿"
 date:   2023-12-22 17:01:38 +0900
 categories: [Academy]
 permalink: /academy/gloria/word/template
@@ -37,7 +37,7 @@ permalink: /academy/gloria/word/template
 
 <div>
   <p>이곳에서 시험 단어를 변경할 수 있습니다. </p> <p id="listLoaded"></p>
-<textarea id="wordList" cols="45" rows="10" placeholder="단어 목록">
+<textarea id="wordList" cols="47" rows="10" placeholder="단어 목록">
 # <- 이 기호로 시작하거나 빈 줄은 인식하지 않습니다.
 # 띄어쓰기는 채점 중 인식되지 않습니다.
 # 형식: 단어/뜻/유의어/반의어/예문(단어:'')
