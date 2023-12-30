@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-30T18:15:37+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Uselessness</title><subtitle>잡다한 것들 모아놓는 사이트</subtitle><entry><title type="html">글로리아 단어 시험 템플릿</title><link href="http://localhost:4000/academy/gloria/word/template" rel="alternate" type="text/html" title="글로리아 단어 시험 템플릿" /><published>2023-12-22T17:01:38+09:00</published><updated>2023-12-22T17:01:38+09:00</updated><id>http://localhost:4000/academy/gloria/word/gloria-word-test-template</id><content type="html" xml:base="http://localhost:4000/academy/gloria/word/template"><![CDATA[<p>정답과 정확히 같아야 정답으로 인식합니다. <br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-30T18:34:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Uselessness</title><subtitle>잡다한 것들 모아놓는 사이트</subtitle><entry><title type="html">글로리아 단어 시험 템플릿</title><link href="http://localhost:4000/academy/gloria/word/template" rel="alternate" type="text/html" title="글로리아 단어 시험 템플릿" /><published>2023-12-22T17:01:38+09:00</published><updated>2023-12-22T17:01:38+09:00</updated><id>http://localhost:4000/academy/gloria/word/gloria-word-test-template</id><content type="html" xml:base="http://localhost:4000/academy/gloria/word/template"><![CDATA[<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  p { margin: 8px 0px 8px 0px; }
+</style>
+</head>
+
+<p>정답과 정확히 같아야 정답으로 인식합니다. <br />
 복수정답은 쉼표로 구분하고, 순서가 구분됩니다. <br />
 <input type="checkbox" name="questionType" value="example" checked="" />예문 삽입
 <input type="checkbox" name="questionType" value="toKorean" checked="" />뜻:단어
@@ -424,7 +431,7 @@ hello/안녕///Say 'hello' to my sister.
 
 
 
-</script>]]></content><author><name></name></author><category term="Academy" /><summary type="html"><![CDATA[정답과 정확히 같아야 정답으로 인식합니다. 복수정답은 쉼표로 구분하고, 순서가 구분됩니다. 예문 삽입 뜻:단어 단어:뜻 유/반의어 원하는 문제 종류를 선택하세요. 1개 이상 선택해야 합니다. 완전 랜덤 셔플 지금까지 틀린단어만 풀기]]></summary></entry><entry><title type="html">영어 2차 쓰기 평가 연습</title><link href="http://localhost:4000/school/23/english1" rel="alternate" type="text/html" title="영어 2차 쓰기 평가 연습" /><published>2023-09-25T02:47:08+09:00</published><updated>2023-09-25T02:47:08+09:00</updated><id>http://localhost:4000/school/23/school-english-writing</id><content type="html" xml:base="http://localhost:4000/school/23/english1"><![CDATA[<p>자동으로 쓰기 평가의 문장을 무작위하게 고르고, 올바르게 직역했는지 확인합니다.<br />
+</script>]]></content><author><name></name></author><category term="Academy" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">영어 2차 쓰기 평가 연습</title><link href="http://localhost:4000/school/23/english1" rel="alternate" type="text/html" title="영어 2차 쓰기 평가 연습" /><published>2023-09-25T02:47:08+09:00</published><updated>2023-09-25T02:47:08+09:00</updated><id>http://localhost:4000/school/23/school-english-writing</id><content type="html" xml:base="http://localhost:4000/school/23/english1"><![CDATA[<p>자동으로 쓰기 평가의 문장을 무작위하게 고르고, 올바르게 직역했는지 확인합니다.<br />
 대소문자, 띄어쓰기, 문장 부호 등도 주어진 학습지와 정확히 같아야 정답으로 인식합니다. <br />
 컴퓨터라면 아래의 “긴 입력” 버튼으로 입력칸을 늘릴 수 있습니다. <br />
 포스트의 하단에서 답안을 확인할 수 있습니다.</p>

@@ -5,7 +5,12 @@ date:   2023-12-22 17:01:38 +0900
 categories: [Academy]
 permalink: /academy/gloria/word/template
 ---
-
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  p { margin: 8px 0px 8px 0px; }
+</style>
+</head>
 
 정답과 정확히 같아야 정답으로 인식합니다. <br>
 복수정답은 쉼표로 구분하고, 순서가 구분됩니다. <br>
