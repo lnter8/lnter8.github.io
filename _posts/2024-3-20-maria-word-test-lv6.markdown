@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "마리아 단어 레벨6"
+title:  "마리아 단어 레벨 6"
 date:   2024-3-20 17:01:38 +0900
 categories: [Academy]
-permalink: /academy/gloria/word/template
+permalink: /academy/maria/word/6
 ---
 <head>
 <meta name="viewport" content="width=device-width*0.9, initial-scale=1.0">
@@ -26,8 +26,8 @@ permalink: /academy/gloria/word/template
 <div> 
   <p id="questionText">문제</p>
   <input id="answerInput" type="text" style="width: 320px; font-size: 16px; height: 20px" placeholder=""> <button onclick="textEntered()">입력</button>
-  <p id="grading">(정답 여부)</p> 
-  <p id="wrongList">틀린 단어: X</p>
+  <p id="grading" style="word-wrap:break-word; width: 325px">(정답 여부)</p> 
+  <p id="wrongList" style="word-wrap:break-word; width: 325px">틀린 단어: X</p>
   <button onclick="forceCorrect()">정답 처리</button> <button onclick="skipQuestion()">문제 스킵</button>
   <p id="stats">맞은 문제 수: 0 / 0</p> 
   <p id="addMessage"> </p>

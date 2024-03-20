@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-20T17:45:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Uselessness</title><subtitle>잡다한 것들 모아놓는 사이트</subtitle><entry><title type="html">마리아 단어 레벨 6</title><link href="http://localhost:4000/academy/maria/word/6" rel="alternate" type="text/html" title="마리아 단어 레벨 6" /><published>2024-03-20T17:01:38+09:00</published><updated>2024-03-20T17:01:38+09:00</updated><id>http://localhost:4000/academy/maria/word/maria-word-test-lv6</id><content type="html" xml:base="http://localhost:4000/academy/maria/word/6"><![CDATA[<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://localhost:4000/assets/fonts/fonts.css"/>
+<link rel="stylesheet" href="http://localhost:4000/assets/style.css"/>
+<link rel="stylesheet" href="http://localhost:4000/assets/js/lity.min.css"/>
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:site_name" content="Uselessness" />
+<meta 
+    property="og:title"
+    content="
+        
+            마리아 단어 레벨 6
+        
+    " 
+/>
+
+<meta property="og:url" content="http://localhost:4000//academy/maria/word/6" />
+
+    <meta property="og:type" content="article" />
+
+
+
+    <meta property="fb:app_id" content="" />
+
+
+
+<title>
+    
+        마리아 단어 레벨 6
+    
+</title>
+</head>
+<body class="index">
+
+    <header class="header">
+    <section class="logo">
+        <a href="http://localhost:4000/" class="logo__link">
+            
+                <h1>Uselessness</h1>
+            
+        </a>
+    </section>
+    <button id="menuToggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+    <nav class="menu">
+        
+<ul class="list primary">
+
+    
+</ul>
+    </nav>
+</header>
+
+    <article class="post">
+
+    <div class="post__title">
+        <h1 class="post__title__text">마리아 단어 레벨 6</h1>
+    </div>
+    <div class="post__meta"> 
+        <div class="post__meta__category">
+            
+                <p class="post__meta__category__title">No category</p>
+            
+        </div>
+        <p class="post__meta__divider">·</p>
+        <div class="post__meta__date">
+            March 20, 2024
+        </div>
+        
+    </div>
+
+    
+
+    <div class="post__content">
+        <head>
 <meta name="viewport" content="width=device-width*0.9, initial-scale=1.0" />
 <style>
   p { margin: 8px 0px 8px 0px; }
@@ -928,719 +1011,23 @@ revitalize/소생시키다, 활력을 불어넣다///
 
 
 
-</script>]]></content><author><name></name></author><category term="Academy" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">글로리아 단어 템플릿</title><link href="http://localhost:4000/academy/gloria/word/template" rel="alternate" type="text/html" title="글로리아 단어 템플릿" /><published>2023-12-22T17:01:38+09:00</published><updated>2023-12-22T17:01:38+09:00</updated><id>http://localhost:4000/academy/gloria/word/gloria-word-test-template%20-%20%EB%B3%B5%EC%82%AC%EB%B3%B8</id><content type="html" xml:base="http://localhost:4000/academy/gloria/word/template"><![CDATA[<head>
-<meta name="viewport" content="width=device-width*0.9, initial-scale=1.0" />
-<style>
-  p { margin: 8px 0px 8px 0px; }
-</style>
-</head>
-
-<p>정답과 정확히 같아야 정답으로 인식합니다. <br />
-복수정답은 쉼표로 구분하고, 순서가 구분됩니다. <br />
-<input type="checkbox" name="questionType" value="example" checked="" />예문 삽입
-<input type="checkbox" name="questionType" value="toKorean" checked="" />뜻:단어
-<input type="checkbox" name="questionType" value="toEnglish" checked="" />단어:뜻
-<input type="checkbox" name="questionType" value="synonym" checked="" />유/반의어</p>
-<p id="checkboxError">원하는 문제 종류를 1개 이상 선택하세요.</p>
-<p><input type="checkbox" id="completeRandom" name="completeRandom" onclick="shuffleQuestion()" />완전 랜덤 셔플
-<input type="checkbox" id="onlyWrongMode" name="onlyWrongMode" onclick="wrongModeCheck()" />지금까지 틀린단어만 풀기
-<br /></p>
-
-<div> 
-  <p id="questionText">문제</p>
-  <input id="answerInput" type="text" style="width: 320px; font-size: 16px; height: 20px" placeholder="" /> <button onclick="textEntered()">입력</button>
-  <p id="grading">(정답 여부)</p> 
-  <p id="wrongList">틀린 단어: X</p>
-  <button onclick="forceCorrect()">정답 처리</button> <button onclick="skipQuestion()">문제 스킵</button>
-  <p id="stats">맞은 문제 수: 0 / 0</p> 
-  <p id="addMessage"> </p>
-</div>
-
-<p><br /></p>
-
-<div>
-  <p>이곳에서 시험 단어를 변경할 수 있습니다. </p> <p id="listLoaded"></p>
-<textarea id="wordList" cols="47" rows="10" placeholder="단어 목록">
-# &lt;- 이 기호로 시작하거나 빈 줄은 인식하지 않습니다.
-# 띄어쓰기는 채점 중 인식되지 않습니다.
-# 형식: 단어/뜻/유의어/반의어/예문(단어:'')
-# 유/반의어는 없으면 그 단어의 유/반의어 문제는 출제되지 않습니다.
-# 예시: fragile/깨지기 쉬운,덧없는/delicate,transient/firm/Owl is a 'fragile', graceful creature.
-
-fragile/깨지기 쉬운,덧없는/delicate,transient/firm/Owl is a 'fragile', graceful creature.
-perk/특전/benefit//'Perks' offered by the firm include a car and free health insurance.
-hello/안녕///Say 'hello' to my sister.
-예문에 ' 2개가 없거나, / 5개로 이루어지지 않은 이런 문장은 오류처리 됩니다.
-</textarea>
-  <br />
-  <button onclick="shortList()">축소</button> <button onclick="longList()">확대</button> <button onclick="loadList()">로드</button> 
-</div>
-
-<p><br /><br /></p>
-
-<p><button onclick="resetScore()">점수 리셋</button> <button onclick="resetWord()">단어 리셋</button></p>
-
-<script>
-  document.addEventListener('DOMContentLoaded', startUp);
-
-  function startUp() {
-    loadList();
-  }
-
-  var answerInput = document.getElementById("answerInput");
-  
-  answerInput.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      if (answerInput.value !== "") textEntered();
-
-    }
-    
-  });
-
-  var questionOrder = [];
-  function shuffleQuestion() {
-    questionOrder = [];
-    for (var i = 0; i < wordSplit.length; i++) {
-      questionOrder.push(i);
-    }
-    let temp;
-    for (var i = 0; i < wordSplit.length-1; i++) {
-      var j = Math.floor(Math.random()*(wordSplit.length-i)+i)
-      temp = questionOrder[i];
-      questionOrder[i] = questionOrder[j]
-      questionOrder[j] = temp;
-    }
-  }
-
-  var onlyWrong = false;
-  function wrongModeCheck() { onlyWrong = document.getElementById("onlyWrongMode").checked }
-  var wrongList = [];
-
-  function nextQuestionNumber() {
-    if (onlyWrong) {
-      if (wrongList.length > 0) return wrongList[Math.floor(Math.random()*(wrongList.length))];
-      onlyWrong = false;
-      document.getElementById("onlyWrongMode").checked = false;
-    }
-    if (wordSplit.length == 0) return -1;
-    if (document.getElementById("completeRandom").checked) return Math.floor(Math.random()*(wordSplit.length));
-    if (questionOrder.length == 0) shuffleQuestion();
-    let next = questionOrder.pop();
-    return next;
-  }
-
-
-  function updateWrong() {
-    let wrongText = "틀린 단어: ";
-    if (wrongList.length == 0) {
-      wrongText += "X, ";
-    }
-    wrongList.forEach((v) => {
-      wrongText += wordSplit[v][0] + ", ";
-    })
-    document.getElementById("wrongList").innerText = wrongText.substring(0,wrongText.length-2);
-    return;
-  }
-
-
-  // input word stuff
-  // 단어/뜻,뜻2/유의어/반의어/예문(단어:'')
-  var wordSplit = [];
-  function loadList() {
-    wordSplit = [];
-    let rawWordList = document.getElementById("wordList").value;
-    let wordSingle = rawWordList.split("\n"); // wtf regex: split at \n
-    wordSingle.forEach((v) => {
-      if (!v.startsWith("#") && v !== "") {
-        let line = v.split('/');
-        wordSplit.push(line);
-      }
-    });
-
-    let errorCount = 0;
-    for (let i = wordSplit.length - 1; i >= 0; i--) {
-      if (wordSplit[i][0][0] == "#" || (wordSplit[i].length == 1 && wordSplit[i][0] == "")) {
-        wordSplit.splice(i, 1);
-      } 
-      else if (wordSplit[i].length != 5 || wordSplit[i][4].split("'").length != 3) {
-        errorCount++;
-        wordSplit.splice(i, 1);
-      }
-    }
-
-
-    document.getElementById("listLoaded").innerText = "로드 완료 (" + wordSplit.length +"개 성공, " + errorCount + "개 실패)";
-    chooseQuestion();
-  }
-
-  function noQuestionAvailable() {
-    document.getElementById("questionText").innerText = "-"; 
-    answerInput.placeholder = "-"; 
-    currentAnswer = "-";
-    if (onlyWrong) {
-      onlyWrong = false;
-      document.getElementById("onlyWrongMode").checked = false;
-      document.getElementById("addMessage").innerText = "틀린 단어중 남은 문제가 없으므로 다시 모든 단어가 출제됩니다.";
-    }
-    else document.getElementById("addMessage").innerText = "문제가 없습니다. 설정과 단어를 확인하세요.";
-  }
-
-  var currentWordNumber = 0;
-
-  var selectedType = []
-  selectedType.length = 4;
-
-  function chooseQuestion() {
-    var selectedEls = document.querySelectorAll('input[name="questionType"]:checked');
-    selectedType.fill(false)
-    selectedEls.forEach((el) => {
-      if (el.value == "example") selectedType[0] = true;
-      else if (el.value == "toKorean") selectedType[1] = true;
-      else if (el.value == "toEnglish") selectedType[2] = true;
-      else if (el.value == "synonym") selectedType[3] = true;
-    });
-
-    if (onlyWrong) {
-      if (wrongList.length == 0) {
-        onlyWrong = false;
-        document.getElementById("onlyWrongMode").checked = false;
-      }
-      else if (wrongList.every((w) => wordSplit[w][2].length == 0 && wordSplit[w][3].length == 0)) selectedType[3] = false;
-    }
-    
-    if (wordSplit.every((w, i) => w[2].length == 0 && w[3].length == 0)) selectedType[3] = false;
-
-    if (!selectedType.includes(true)) {
-      noQuestionAvailable();
-      return;
-    }
-
-    let trueArray = [];
-    selectedType.forEach((v,i) => {
-      if (v) trueArray.push(i);
-    })
-
-    var nextQuestionType = trueArray[Math.floor(Math.random()*trueArray.length)];
-
-    currentWordNumber = nextQuestionNumber();
-    if (currentWordNumber == -1) {
-      noQuestionAvailable();
-      return;
-    }
-
-    if (nextQuestionType == 3) {
-      if (onlyWrong) {
-        trueArray = [];
-        wrongList.forEach((v,i) => {
-          if (wordSplit[v][2].length > 0 || wordSplit[v][3].length > 0) trueArray.push(i);
-        })
-        currentWordNumber = trueArray[Math.floor(Math.random()*trueArray.length)];
-      }
-      else {
-        trueArray = [];
-        wordSplit.forEach((v,i) => {
-          if (v[2].length > 0 || v[3].length > 0) trueArray.push(i);
-        })
-        currentWordNumber = trueArray[Math.floor(Math.random()*trueArray.length)];
-      }
-      
-    }
-
-    switch (nextQuestionType) {
-      case 0: 
-        questionExample();
-        break;
-      case 1: 
-        questiontoKorean();
-        break;
-      case 2: 
-        questiontoEnglish();
-        break;
-      case 3: 
-        questionSynonym();
-        break;
-    }
-    answerInput.placeholder = currentHint;
-
-  }
-
-  var questionText = document.getElementById("questionText");
-  var currentAnswer = "";
-  var currentHint = "";
-
-  function questionExample() {
-    let word = wordSplit[currentWordNumber][0];
-    let example = wordSplit[currentWordNumber][4];
-    let exampleQuestion = example.split("'");
-    questionText.innerText = exampleQuestion[0] + "' '" + exampleQuestion[2];
-    currentAnswer = exampleQuestion[1];
-    currentHint = currentAnswer[0];
-    questionText.innerText += " ( " + currentHint + " )";
-
-  }
-
-  function questiontoKorean() {
-    let word = wordSplit[currentWordNumber][0];
-    let meaning = wordSplit[currentWordNumber][1];
-    questionText.innerText = word + " 의 뜻은?";
-    currentAnswer = meaning;
-    currentHint = "";
-  }
-
-  function questiontoEnglish() {  
-    let word = wordSplit[currentWordNumber][0];
-    let meaning = wordSplit[currentWordNumber][1];
-    let meaningSplit = meaning.split(",");
-    questionText.innerText = meaningSplit[Math.floor(meaningSplit.length * Math.random())] + " 은 영어로?";
-    currentAnswer = word;
-    currentHint = word[0];
-    questionText.innerText += " ( " + currentHint + " )";
-  }
-
-  function questionSynonym() {
-    let word = wordSplit[currentWordNumber][0];
-    let synonym = wordSplit[currentWordNumber][2];
-    let antonym = wordSplit[currentWordNumber][3];
-    let rand = Math.floor(Math.random()*2);
-    if (synonym.length == 0) rand = 1;
-    else if (antonym.length == 0) rand = 0;
-    if (rand == 0)  {
-      questionText.innerText = word + "의 유의어는?";
-      currentAnswer = synonym;
-      let hintText = "";
-      let synonymSplit = synonym.split(",");
-      synonymSplit.forEach((s) => {
-        hintText += s[0] + ", "
-      })
-      hintText = hintText.substring(0, hintText.length - 2) 
-      currentHint = hintText;
-    }
-    else {
-      questionText.innerText = word + "의 반의어는?";
-      currentAnswer = antonym;
-      let hintText = "";
-      let antonymSplit = antonym.split(",");
-      antonymSplit.forEach((s) => {
-        hintText += s[0] + ", "
-      })
-      hintText = hintText.substring(0, hintText.length - 2) 
-      currentHint = hintText;
-    }
-    questionText.innerText += " ( " + currentHint + " )";
-  }
-
-  var attempt = 0;
-  var correct = 0;
-  var skipped = 0;
-  var combo = 0;
-  var comboLast = 0;
-  var lastWordNumber = 0;
-
-  function textEntered() {
-    if (!answerInput) return;
-    let input = answerInput.value;
-    answerInput.value = "";
-
-    if (currentAnswer == "-") {
-      chooseQuestion();
-      return;
-    }
-    //답 확인, 새 문제
-    
-    attempt++;
-    lastWordNumber = currentWordNumber;
-    if (input.replace(" ", "") == currentAnswer.replace(" ", "")) {
-      correct++;
-      document.getElementById("grading").innerText = "정답입니다! ( " + currentAnswer + " )";
-      if (wrongList.includes(currentWordNumber)) {
-        wrongList.splice(wrongList.indexOf(currentWordNumber),1);
-      }
-      combo++;
-    }
-
-    else {
-      document.getElementById("grading").innerText = "오답입니다. (입력: " + input + " / 답: " + currentAnswer + ")";
-      if (!wrongList.includes(currentWordNumber)) wrongList.push(currentWordNumber);
-      comboLast = combo;
-      combo = 0;
-      
-    }
-
-    let statMessage = "맞은 문제 수: " + correct + " / " + attempt + "+" + skipped + " ( " + combo + " 콤보";
-    if (combo >= 5) statMessage += "!";
-    if (combo >= 10) statMessage += "!";
-    statMessage += " )";
-    document.getElementById("stats").innerText = statMessage;
-
-    document.getElementById("addMessage").innerText = " ";
-
-    chooseQuestion();
-    updateWrong();
-
-  }
-
-  var wordList = document.getElementById("wordList");
-
-  var listSize = 10;
-  function shortList() {
-    if (listSize > 10) listSize -= 5;
-    wordList.cols = listSize*5-3 + "";
-    wordList.rows = listSize + "";
-  }
-
-  function longList() {
-    if (listSize < 20) listSize += 5;
-    wordList.cols = listSize*5-3 + "";
-    wordList.rows = listSize + "";
-  }
-
-  function forceCorrect() {
-    if (currentAnswer == "-") {
-      chooseQuestion();
-      return;
-    }
-    if (!wrongList.includes(lastWordNumber)) return;
-    wrongList.splice(wrongList.indexOf(lastWordNumber),1);
-    correct++;
-    combo = comboLast;
-    combo++;
-
-    let statMessage = "맞은 문제 수: " + correct + " / " + attempt + "+" + skipped + " ( " + combo + " 콤보";
-    if (combo >= 5) statMessage += "!";
-    if (combo >= 10) statMessage += "!";
-    statMessage += " )";
-    document.getElementById("stats").innerText = statMessage;
-
-    document.getElementById("addMessage").innerText = "정답 처리되었습니다.";
-
-    updateWrong();
-  }
-
-  function skipQuestion() {
-    if (currentAnswer == "-") {
-      chooseQuestion();
-      return;
-    }
-    skipped++;
-
-    let statMessage = "맞은 문제 수: " + correct + " / " + attempt + "+" + skipped + " ( " + combo + " 콤보";
-    if (combo >= 5) statMessage += "!";
-    if (combo >= 10) statMessage += "!";
-    statMessage += " )";
-    document.getElementById("stats").innerText = statMessage;
-    
-    document.getElementById("addMessage").innerText = "스킵되었습니다.";
-
-
-    chooseQuestion();
-  }
-
-  function resetScore() {
-    document.getElementById("grading").innerText = "(정답 여부)"
-    wrongList.length = 0;
-    updateWrong();
-    document.getElementById("stats").innerText = "맞은 문제 수: 0 / 0"
-    attempt = 0;
-    correct = 0;
-    skipped = 0;
-    combo = 0;
-    comboLast = 0;
-    lastWordNumber = 0;
-
-  }
-
-  const baseWordList = document.getElementById("wordList").value
-  function resetWord() {
-    document.getElementById("wordList").value = baseWordList
-  }
-
-
-
-</script>]]></content><author><name></name></author><category term="Academy" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">영어 2차 쓰기 평가 연습</title><link href="http://localhost:4000/school/23/english1" rel="alternate" type="text/html" title="영어 2차 쓰기 평가 연습" /><published>2023-09-25T02:47:08+09:00</published><updated>2023-09-25T02:47:08+09:00</updated><id>http://localhost:4000/school/23/school-english-writing</id><content type="html" xml:base="http://localhost:4000/school/23/english1"><![CDATA[<p>자동으로 쓰기 평가의 문장을 무작위하게 고르고, 올바르게 직역했는지 확인합니다.<br />
-대소문자, 띄어쓰기, 문장 부호 등도 주어진 학습지와 정확히 같아야 정답으로 인식합니다. <br />
-컴퓨터라면 아래의 “긴 입력” 버튼으로 입력칸을 늘릴 수 있습니다. <br />
-포스트의 하단에서 답안을 확인할 수 있습니다.</p>
-
-<div>
-  <p id="question-text">이 앱은 사람들이 다른 사람들로부터 빌릴 수 있는 물건들을 쉽게 찾도록 돕는다.</p>
-  <input id="answer-input" type="text" style="width: 400px; font-size: 16px; height: 20px" placeholder="직역한 문장" /> <button onclick="textEntered()"> 입력 </button> 
-  <p id="stats">이곳에 정답을 맞힌 횟수, 비율 등이 표시됩니다.</p>
-  <p id="correct-row">주어진 문장을 영작하세요.</p>
-  <br />
-  <button onclick="shuffleMode()">기본 셔플</button> <button onclick="fullRandomMode()">랜덤 셔플</button>
-  <button onclick="shortInput()">짧은 입력</button> <button onclick="longInput()">긴 입력</button>
-</div>
-<script>
-  var questions = [
-    "이 앱은 사람들이 다른 사람들로부터 빌릴 수 있는 물건들을 쉽게 찾도록 돕는다.",
-    "더 많은 사람들이 그 서비스들을 사용할수록, 그것들이 더 개선될 것이다.",
-    "그것은 네가 다른 사람들로부터 빌릴 수 있는 물건들을 찾을 수 있는 앱이다.",
-    "그 문제가 더 복잡할수록, 그것을 푸는 데 시간이 더 오래 걸린다.",
-    "그녀가 더 유명해질수록, 그녀는 더 많은 돈을 벌 것이다.",
-    "전에 한 번도 비행기로 날아간 적이(비행기를 탄 적이) 없었으므로 나는 긴장되었다.",
-    "영국에서 태어났지만, 그는 지금 파리를 그의 고향으로 여긴다.",
-    "일반적으로 말해, 더 큰 동물들이 더 작은 동물들보다 더 오래 산다.",
-    "피터가 저녁을 다 먹었기 때문에, 우리는 산책을 했다.",
-    "그 유명인들이 도착하여 자리들에 앉자, 파티가 시작되었다.",
-    "그녀는 그를 모방하는 대신에 그녀 자신의 스타일을 개발했어야 했다.",
-    "정부는 우리 경제가 성장하도록 돕기 위해 노력을(시도를) 해야 한다.",
-    "나는 내 개인 정보를 나누어 주지(알려 주지) 않으려고 노력한다.",
-    "우리는 병으로 인해 사람들이 쉬는(퇴근하는/휴가를 내는) 시간의 양을 기록한다.",
-    "약간의 조화들이 거실을 장식하기 위해 사용되었다.",
-    "예전에는 여행자들이 대개 별들에 의해 길을 찾았다.",
-    "홍수들과 지진들과 같은 자연 재해들은 매년 수천 명의 사람들에게 영향을 준다.",
-    "이 사전은 전자 형식으로 구할 수 있다.",
-    "사이렌은 모두가 건물을 떠나라는 신호였다.",
-    "모든 차는 에어백을 갖추고 있다.",
-    "몇몇 사람들은 로봇들의 도움으로 인생이 더욱 편안해지기를 기대한다.",
-    "수색구조 로봇들은 인간들에게 위험한 재난지역들로 들어갈 수 있다.",
-    "내 여동생은 그 고급스러운 가방을 살 수 있기 위해서 돈을 모았다.",
-    "만약 내 고양이가 그 냉장고를 열 수 있다면 그것은 내 음식 모두를 먹을 텐데.",
-    "이 문제를 해결하기 위해서, 우리는 빌려주는 사람들에게 주기적으로 자신들의 물품들의 사진들을 업데이트할 것을 요청하고 있다.",
-    "그녀가 피곤하지 않다면 그녀는 밤새 공부를 할 텐데.",
-    "우리는 텐트를 빌릴 수 있고 우리 강아지를 돌봐줄 누군가를 찾을 수 있다.",
-    "만약 컴퓨터가 없다면 나는 그것을 끝낼 수 없을 텐데.",
-    "우리는 우리의 눈들을 태양으로부터 보호할 수 있기 위해서 선글라스를 쓴다.",
-    "그것은 반려동물 소유자들이 자신들의 반려동물들을 돌봐줄 신뢰할 만한 사람들을 찾는 것을 도와준다.",
-    "과거에는 로봇들은 인간들이 그들에게(로봇들에게) 하라고 프로그램한 쉬운 과제들만 수행했다.",
-    "AI를 가진 로봇들은 환경들을 인지하고 결정들을 만든다.",
-    "한 로봇 떼는 서로서로 의사소통할 수 있는 로봇들의 한 거대한 집단이다.",
-  ];
-  var answers = [
-    "This App helps people easily find items that they can borrow from others.",
-    "The more people use the services, the more they will improve.",
-    "It is an app where you can find items that you can borrow from others.",
-    "The more complex the problem is, the longer it takes to solve it.",
-    "The more popular she becomes, the more money she will make.",
-    "Never having flown on a plane before, I became nervous.",
-    "Born in England, he now looks upon Paris as his hometown.",
-    "Generally speaking, bigger animals live longer than smaller animals.",
-    "Peter having finished dinner, we went out for a walk.",
-    "The celebrities arriving and taking seats, the party began.",
-    "She should have developed her own style instead of copying him.",
-    "The government should try to help our economy grow.",
-    "I try not to give out my personal information.",
-    "We record the amount of time that people have off work because of sickness.",
-    "Some artificial flowers were used to decorate the living room.",
-    "Travelers usually navigated by the stars in the old days.",
-    "Natural disasters, such as floods and earthquakes, affect thousands of people every year.",
-    "This dictionary is available in electronic form.",
-    "The siren was a signal for everyone to leave the building.",
-    "Every car is equipped with an airbag.",
-    "Some people expect life to become more convenient with the help of robots.",
-    "Search-and-rescue robots can go into disaster areas that are dangerous for humans.",
-    "My sister saved money so that she could buy the luxurious bag.",
-    "If my cat could open the fridge, it would eat all my food.",
-    "To fix this issue, we are asking lenders to update the pictures of their items regularly.",
-    "If she were not tired, she could study all night.",
-    "We can borrow a tent and find someone to take care of our dog.",
-    "If it were not for the computer, I could not finish it.",
-    "We wear sunglasses so that we can protect our eyes from the sun.",
-    "It helps pet owners find reliable people to look after their pets.",
-    "In the past, robots performed only easy tasks that humans programmed them to do.",
-    "Robots that have AI can perceive environments and make decisions.",
-    "A robot swarm is a large group of robots that can communicate with one another.",
-  ];
 </script>
 
-<script>
-  var input = document.getElementById("answer-input");
-  var combo = 0;
-  var combotext;
-  var curtextno = 0;
-  
-  input.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      if (input.value !== "") textEntered();
-    }
-  });
 
-  var doshuffle = true;
-  var shuffle = [];
-  newShuffle();
+    </div>
+</article>
 
-  function newShuffle() {
-    shuffle.length = 0;
-    for (var i = 0; i < questions.length; i++) {
-      shuffle.push(i);
-    }
-    var temp;
-    for (var i = 0; i < questions.length-1; i++) {
-      var j = Math.floor(Math.random()*(questions.length-i)+i)
-      temp = shuffle[i];
-      shuffle[i] = shuffle[j]
-      shuffle[j] = temp;
-    }
-  }
-
-  var attempt = 0;
-  var correct = 0;
-  
-  function textEntered() {
-    if (input.value === answers[curtextno]) {
-      combo++;
-      correct++;
-    }
-    else combo = 0;
-    combotext = combo + "연속 정답!";
-    if (combo == 0) combotext = "오답입니다. 입력 값: \"" + input.value + "\", 실제 답: \"" + answers[curtextno] + "\""
-    else combotext += " (\"" + input.value + ")\"";
-    input.value = "";
-    document.getElementById('correct-row').innerHTML = combotext;
     
-    attempt++;
-    if (!doshuffle) {
-      var qcomp = curtextno;
-      curtextno = Math.floor(Math.random()*questions.length);
-      if (qcomp == curtextno) curtextno++;
-    }
-    else {
-      curtextno = shuffle[attempt%questions.length];
-    }
-    curtextno %= questions.length;
-    if (doshuffle && attempt % questions.length == 0) newShuffle();
-
-    var correctp = "PERFECT";
-    if (correct < attempt) correctp = Math.floor(correct / attempt * 10000)/100;
-    stattext = "현재 정답률: " + correct + " / " + attempt + " = " + correctp + "%";
-    document.getElementById('stats').innerHTML = stattext;
-    document.getElementById('question-text').innerHTML = questions[curtextno];
-  }
-
-  function fullRandomMode() {
-    doshuffle = false;
-  }
-
-  function shuffleMode() {
-    doshuffle = true;
-    newShuffle();
-  }
-
-  function shortInput() {
-    input.style.width = "400px";
-  }
-
-  function longInput() {
-    input.style.width = "625px";
-  }
-</script>
-
-<p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 이 앱은 사람들이 다른 사람들로부터 빌릴 수 있는 물건들을 쉽게 찾도록 돕는다.
-This App helps people easily find items that they can borrow from others.
-
-2. 더 많은 사람들이 그 서비스들을 사용할수록, 그것들이 더 개선될 것이다.
-The more people use the services, the more they will improve.
-
-3. 그것은 네가 다른 사람들로부터 빌릴 수 있는 물건들을 찾을 수 있는 앱이다.
-It is an app where you can find items that you can borrow from others.
-
-4. 그 문제가 더 복잡할수록, 그것을 푸는 데 시간이 더 오래 걸린다.
-The more complex the problem is, the longer it takes to solve it.
-
-5. 그녀가 더 유명해질수록, 그녀는 더 많은 돈을 벌 것이다.
-The more popular she becomes, the more money she will make.
-
-6. 전에 한 번도 비행기로 날아간 적이(비행기를 탄 적이) 없었으므로 나는 긴장되었다.
-Never having flown on a plane before, I became nervous.
-
-7. 영국에서 태어났지만, 그는 지금 파리를 그의 고향으로 여긴다.
-Born in England, he now looks upon Paris as his hometown.
-
-8. 일반적으로 말해, 더 큰 동물들이 더 작은 동물들보다 더 오래 산다.
-Generally speaking, bigger animals live longer than smaller animals.
-
-9. 피터가 저녁을 다 먹었기 때문에, 우리는 산책을 했다.
-Peter having finished dinner, we went out for a walk.
-
-10. 그 유명인들이 도착하여 자리들에 앉자, 파티가 시작되었다.
-The celebrities arriving and taking seats, the party began.
-
-11. 그녀는 그를 모방하는 대신에 그녀 자신의 스타일을 개발했어야 했다.
-She should have developed her own style instead of copying him.
-
-12. 정부는 우리 경제가 성장하도록 돕기 위해 노력을(시도를) 해야 한다.
-The government should try to help our economy grow.
-
-13. 나는 내 개인 정보를 나누어 주지(알려 주지) 않으려고 노력한다.
-I try not to give out my personal information.
-
-14. 우리는 병으로 인해 사람들이 쉬는(퇴근하는/휴가를 내는) 시간의 양을 기록한다.
-We record the amount of time that people have off work because of sickness.
-
-15. 약간의 조화들이 거실을 장식하기 위해 사용되었다.
-Some artificial flowers were used to decorate the living room.
-
-16. 예전에는 여행자들이 대개 별들에 의해 길을 찾았다.
-Travelers usually navigated by the stars in the old days.
-
-17. 홍수들과 지진들과 같은 자연 재해들은 매년 수천 명의 사람들에게 영향을 준다.
-Natural disasters, such as floods and earthquakes, affect thousands of people every year.
-
-18. 이 사전은 전자 형식으로 구할 수 있다.
-This dictionary is available in electronic form.
-
-19. 사이렌은 모두가 건물을 떠나라는 신호였다.
-The siren was a signal for everyone to leave the building.
-
-20. 모든 차는 에어백을 갖추고 있다.
-Every car is equipped with an airbag.
-
-21. 몇몇 사람들은 로봇들의 도움으로 인생이 더욱 편안해지기를 기대한다.
-Some people expect life to become more convenient with the help of robots.
-
-22. 수색구조 로봇들은 인간들에게 위험한 재난지역들로 들어갈 수 있다.
-Search-and-rescue robots can go into disaster areas that are dangerous for humans.
-
-23. 내 여동생은 그 고급스러운 가방을 살 수 있기 위해서 돈을 모았다.
-My sister saved money so that she could buy the luxurious bag.
-
-24. 만약 내 고양이가 그 냉장고를 열 수 있다면 그것은 내 음식 모두를 먹을 텐데.
-If my cat could open the fridge, it would eat all my food.
-
-25. 이 문제를 해결하기 위해서, 우리는 빌려주는 사람들에게 주기적으로 자신들의 물품들의 사진들을 업데이트할 것을 요청하고 있다.
-To fix this issue, we are asking lenders to update the pictures of their items regularly.
-
-26. 그녀가 피곤하지 않다면 그녀는 밤새 공부를 할 텐데.
-If she were not tired, she could study all night.
-
-27. 우리는 텐트를 빌릴 수 있고 우리 강아지를 돌봐줄 누군가를 찾을 수 있다.
-We can borrow a tent and find someone to take care of our dog.
-
-28. 만약 컴퓨터가 없다면 나는 그것을 끝낼 수 없을 텐데.
-If it were not for the computer, I could not finish it.
-
-29. 우리는 우리의 눈들을 태양으로부터 보호할 수 있기 위해서 선글라스를 쓴다.
-We wear sunglasses so that we can protect our eyes from the sun.
-
-30. 그것은 반려동물 소유자들이 자신들의 반려동물들을 돌봐줄 신뢰할 만한 사람들을 찾는 것을 도와준다.
-It helps pet owners find reliable people to look after their pets.
-
-31. 과거에는 로봇들은 인간들이 그들에게(로봇들에게) 하라고 프로그램한 쉬운 과제들만 수행했다.
-In the past, robots performed only easy tasks that humans programmed them to do.
-
-32. AI를 가진 로봇들은 환경들을 인지하고 결정들을 만든다.
-Robots that have AI can perceive environments and make decisions.
-
-33. 한 로봇 떼는 서로서로 의사소통할 수 있는 로봇들의 한 거대한 집단이다.
-A robot swarm is a large group of robots that can communicate with one another.
-</code></pre></div></div>]]></content><author><name></name></author><category term="School" /><summary type="html"><![CDATA[자동으로 쓰기 평가의 문장을 무작위하게 고르고, 올바르게 직역했는지 확인합니다. 대소문자, 띄어쓰기, 문장 부호 등도 주어진 학습지와 정확히 같아야 정답으로 인식합니다. 컴퓨터라면 아래의 “긴 입력” 버튼으로 입력칸을 늘릴 수 있습니다. 포스트의 하단에서 답안을 확인할 수 있습니다.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/basics/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2023-09-13T22:03:08+09:00</published><updated>2023-09-13T22:03:08+09:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/basics/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+    <footer class="footer">
+        <section class="footer__about">
+                <p class="footer__about__copyright"></p>
+                
+                <span class="footer__about__theme"><p>theme</p><a id="simplex-logo" href="https://github.com/andreondra/jekyll-theme-simplex" target="_blank"><img alt="Simplex theme logo" src="http://localhost:4000/assets/img/icons/simplex_logo.svg"/></a><p>by <a href="https://ondrej.golasowski.com/">golas</a></p></span>
+        </section>
+</footer>
+    
+    <script src="http://localhost:4000/assets/js/jquery.slim.min.js"></script>
+<script src="http://localhost:4000/assets/js/lity.min.js"></script>
+<script src="http://localhost:4000/assets/js/tools.js"></script>
+</body>
+</html>
