@@ -1,107 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: post
+title:  "마리아 단어 레벨6"
+date:   2024-3-20 17:01:38 +0900
+categories: [Academy]
+permalink: /academy/gloria/word/template
+---
 <head>
-    <link rel="stylesheet" href="http://localhost:4000/assets/fonts/fonts.css"/>
-<link rel="stylesheet" href="http://localhost:4000/assets/style.css"/>
-<link rel="stylesheet" href="http://localhost:4000/assets/js/lity.min.css"/>
-
-
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta property="og:site_name" content="Uselessness" />
-<meta 
-    property="og:title"
-    content="
-        
-            마리아 단어 레벨6
-        
-    " 
-/>
-
-<meta property="og:url" content="http://localhost:4000//academy/gloria/word/template" />
-
-    <meta property="og:type" content="article" />
-
-
-
-    <meta property="fb:app_id" content="" />
-
-
-
-<title>
-    
-        마리아 단어 레벨6
-    
-</title>
-</head>
-<body class="index">
-
-    <header class="header">
-    <section class="logo">
-        <a href="http://localhost:4000/" class="logo__link">
-            
-                <h1>Uselessness</h1>
-            
-        </a>
-    </section>
-    <button id="menuToggle">
-        <div></div>
-        <div></div>
-        <div></div>
-    </button>
-    <nav class="menu">
-        
-<ul class="list primary">
-
-    
-</ul>
-    </nav>
-</header>
-
-    <article class="post">
-
-    <div class="post__title">
-        <h1 class="post__title__text">마리아 단어 레벨6</h1>
-    </div>
-    <div class="post__meta"> 
-        <div class="post__meta__category">
-            
-                <p class="post__meta__category__title">No category</p>
-            
-        </div>
-        <p class="post__meta__divider">·</p>
-        <div class="post__meta__date">
-            March 20, 2024
-        </div>
-        
-    </div>
-
-    
-
-    <div class="post__content">
-        <head>
-<meta name="viewport" content="width=device-width*0.9, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width*0.9, initial-scale=1.0">
 <style>
   p { margin: 8px 0px 8px 0px; }
 </style>
 </head>
 
-<p>정답과 정확히 같아야 정답으로 인식합니다. <br />
-복수정답은 쉼표로 구분합니다. <br />
-<input type="checkbox" name="questionType" value="example" disabled="" />예문 삽입
-<input type="checkbox" name="questionType" value="toKorean" checked="" />단어:뜻
-<input type="checkbox" name="questionType" value="toEnglish" disabled="" />뜻:단어
-<input type="checkbox" name="questionType" value="synonym" disabled="" />유/반의어</p>
+정답과 정확히 같아야 정답으로 인식합니다. <br>
+복수정답은 쉼표로 구분합니다. <br>
+<input type='checkbox' name='questionType' value='example' disabled>예문 삽입
+<input type='checkbox' name='questionType' value='toKorean' checked>단어:뜻
+<input type='checkbox' name='questionType' value='toEnglish' disabled>뜻:단어
+<input type='checkbox' name='questionType' value='synonym' disabled>유/반의어
 <p id="checkboxError">원하는 문제 종류를 1개 이상 선택하세요.</p>
-<p><input type="checkbox" id="completeRandom" name="completeRandom" onclick="shuffleQuestion()" />완전 랜덤 셔플
-<input type="checkbox" id="onlyWrongMode" name="onlyWrongMode" onclick="wrongModeCheck()" />지금까지 틀린단어만 풀기
-<br /></p>
+<input type='checkbox' id="completeRandom" name='completeRandom' onClick="shuffleQuestion()">완전 랜덤 셔플
+<input type='checkbox' id="onlyWrongMode" name='onlyWrongMode' onClick="wrongModeCheck()">지금까지 틀린단어만 풀기
+<br>
 
 <div> 
   <p id="questionText">문제</p>
-  <input id="answerInput" type="text" style="width: 320px; font-size: 16px; height: 20px" placeholder="" /> <button onclick="textEntered()">입력</button>
+  <input id="answerInput" type="text" style="width: 320px; font-size: 16px; height: 20px" placeholder=""> <button onclick="textEntered()">입력</button>
   <p id="grading">(정답 여부)</p> 
   <p id="wrongList">틀린 단어: X</p>
   <button onclick="forceCorrect()">정답 처리</button> <button onclick="skipQuestion()">문제 스킵</button>
@@ -109,12 +33,12 @@
   <p id="addMessage"> </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div>
   <p>이곳에서 시험 단어를 변경할 수 있습니다. </p> <p id="listLoaded"></p>
 <textarea id="wordList" cols="47" rows="10" placeholder="단어 목록">
-# &lt;- 이 기호로 시작하거나 빈 줄은 인식하지 않습니다.
+# <- 이 기호로 시작하거나 빈 줄은 인식하지 않습니다.
 # 띄어쓰기는 채점 중 인식되지 않습니다.
 # 형식: 단어/뜻/유의어/반의어/예문(단어:'')
 # 유/반의어는 없으면 그 단어의 유/반의어 문제는 출제되지 않습니다.
@@ -407,13 +331,13 @@ strive/애쓰다, 노력하다, 싸우다///
 soar/솟다, 날아오르다///
 snatch/낚아채다, 움켜잡다, 잡아채기, 조각,단편///
 toss/[가볍게]던지다///
-urge재촉하다,/격려하다, 강요하다, 몰아댐, 충동///
+urge/재촉하다, 격려하다, 강요하다, 몰아댐, 충동///
 intrude/침입하다, 참견하다, 방해하다///
 groan/신음하다, 투덜대다, 신음소리///
 convey/나르다, 운송하다///
 litter/쓰레기를 버리다 , 쓰레기, 잡동사니///
 outlive/보다 더 오래 살다///
-stray길을/잃다, 방황하다, 길 잃은 , 헤매는///
+stray/길을 잃다, 방황하다, 길 잃은 , 헤매는///
 segregate/분리하다, 차별하다///
 enrich/풍부하게 하다, (가치 등을)높이다///
 mediate/조정[중재]하다, 화해시키다///
@@ -539,7 +463,7 @@ bribe/뇌물, 미끼, 뇌물을 주다 , 매수하다///
 imposing/인상적인, 훌륭한///
 pasture/목장. 목초지 ,방목하다///
 candid/솔직한, 노골적인///
-vent통풍구,(감정/등의)표출, (감정 등을)발산하다///
+vent/통풍구,(감정 등의)표출, (감정 등을)발산하다///
 foreshadow/예시하다, 전조가 된다///
 glimpse/힐끗 봄, 일견, 힐끗 보다///
 refrain/억제하다, 그만두다, 삼가다///
@@ -621,413 +545,14 @@ assert/단언하다, 주장하다///
 gleam/반짝이다, 반짝 빛나다, 희미한 빛, 번쩍임///
 revitalize/소생시키다, 활력을 불어넣다///
 </textarea>
-  <br />
+  <br>
   <button onclick="shortList()">축소</button> <button onclick="longList()">확대</button> <button onclick="loadList()">로드</button> 
 </div>
 
-<p><br /><br /></p>
+<br><br>
 
-<p><button onclick="resetScore()">점수 리셋</button> <button onclick="resetWord()">단어 리셋</button></p>
+<button onclick="resetScore()">점수 리셋</button> <button onclick="resetWord()">단어 리셋</button>
 
-<script>
-  document.addEventListener('DOMContentLoaded', startUp);
+{% include mariaWordQuiz.html %}
 
-  function startUp() {
-    loadList();
-  }
 
-  var answerInput = document.getElementById("answerInput");
-  
-  answerInput.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      if (answerInput.value !== "") textEntered();
-
-    }
-    
-  });
-
-  var questionOrder = [];
-  function shuffleQuestion() {
-    questionOrder = [];
-    for (var i = 0; i < wordSplit.length; i++) {
-      questionOrder.push(i);
-    }
-    let temp;
-    for (var i = 0; i < wordSplit.length-1; i++) {
-      var j = Math.floor(Math.random()*(wordSplit.length-i)+i)
-      temp = questionOrder[i];
-      questionOrder[i] = questionOrder[j]
-      questionOrder[j] = temp;
-    }
-  }
-
-  var onlyWrong = false;
-  function wrongModeCheck() { onlyWrong = document.getElementById("onlyWrongMode").checked }
-  var wrongList = [];
-
-  function nextQuestionNumber() {
-    if (onlyWrong) {
-      if (wrongList.length > 0) return wrongList[Math.floor(Math.random()*(wrongList.length))];
-      onlyWrong = false;
-      document.getElementById("onlyWrongMode").checked = false;
-    }
-    if (wordSplit.length == 0) return -1;
-    if (document.getElementById("completeRandom").checked) return Math.floor(Math.random()*(wordSplit.length));
-    if (questionOrder.length == 0) shuffleQuestion();
-    let next = questionOrder.pop();
-    return next;
-  }
-
-
-  function updateWrong() {
-    let wrongText = "틀린 단어: ";
-    if (wrongList.length == 0) {
-      wrongText += "X, ";
-    }
-    wrongList.forEach((v) => {
-      wrongText += wordSplit[v][0] + ", ";
-    })
-    document.getElementById("wrongList").innerText = wrongText.substring(0,wrongText.length-2);
-    return;
-  }
-
-
-  // input word stuff
-  // 단어/뜻,뜻2/유의어/반의어/예문(단어:'')
-  var wordSplit = [];
-  function loadList() {
-    wordSplit = [];
-    let rawWordList = document.getElementById("wordList").value;
-    let wordSingle = rawWordList.split("\n"); // wtf regex: split at \n
-    wordSingle.forEach((v) => {
-      if (!v.startsWith("#") && v !== "") {
-        let line = v.split('/');
-        wordSplit.push(line);
-      }
-    });
-
-    let errorCount = 0;
-    for (let i = wordSplit.length - 1; i >= 0; i--) {
-      if (wordSplit[i][0][0] == "#" || (wordSplit[i].length == 1 && wordSplit[i][0] == "")) {
-        wordSplit.splice(i, 1);
-      } 
-      else if (wordSplit[i].length != 5 || (wordSplit[i][4].length > 0 && wordSplit[i][4].split("'").length != 3)) {
-        errorCount++;
-        wordSplit.splice(i, 1);
-      }
-    }
-
-
-    document.getElementById("listLoaded").innerText = "로드 완료 (" + wordSplit.length +"개 성공, " + errorCount + "개 실패)";
-    chooseQuestion();
-  }
-
-  function noQuestionAvailable() {
-    document.getElementById("questionText").innerText = "-"; 
-    answerInput.placeholder = "-"; 
-    currentAnswer = "-";
-    if (onlyWrong) {
-      onlyWrong = false;
-      document.getElementById("onlyWrongMode").checked = false;
-      document.getElementById("addMessage").innerText = "틀린 단어중 남은 문제가 없으므로 다시 모든 단어가 출제됩니다.";
-    }
-    else document.getElementById("addMessage").innerText = "낼 문제가 없습니다. 설정과 단어를 확인하세요.";
-  }
-
-  var currentWordNumber = 0;
-
-  var selectedType = []
-  selectedType.length = 4;
-
-  function chooseQuestion() {
-    var selectedEls = document.querySelectorAll('input[name="questionType"]:checked');
-    selectedType.fill(false)
-    selectedEls.forEach((el) => {
-      if (el.value == "example") selectedType[0] = true;
-      else if (el.value == "toKorean") selectedType[1] = true;
-      else if (el.value == "toEnglish") selectedType[2] = true;
-      else if (el.value == "synonym") selectedType[3] = true;
-    });
-
-    if (onlyWrong) {
-      if (wrongList.length == 0) {
-        onlyWrong = false;
-        document.getElementById("onlyWrongMode").checked = false;
-      }
-      else if (wrongList.every((w) => wordSplit[w][2].length == 0 && wordSplit[w][3].length == 0)) selectedType[3] = false;
-    }
-    
-    if (wordSplit.every((w, i) => w[2].length == 0 && w[3].length == 0)) selectedType[3] = false;
-
-    if (!selectedType.includes(true)) {
-      noQuestionAvailable();
-      return;
-    }
-
-    let trueArray = [];
-    selectedType.forEach((v,i) => {
-      if (v) trueArray.push(i);
-    })
-
-    var nextQuestionType = trueArray[Math.floor(Math.random()*trueArray.length)];
-
-    currentWordNumber = nextQuestionNumber();
-    if (currentWordNumber == -1) {
-      noQuestionAvailable();
-      return;
-    }
-
-    if (nextQuestionType == 3) {
-      if (onlyWrong) {
-        trueArray = [];
-        wrongList.forEach((v,i) => {
-          if (wordSplit[v][2].length > 0 || wordSplit[v][3].length > 0) trueArray.push(i);
-        })
-        currentWordNumber = trueArray[Math.floor(Math.random()*trueArray.length)];
-      }
-      else {
-        trueArray = [];
-        wordSplit.forEach((v,i) => {
-          if (v[2].length > 0 || v[3].length > 0) trueArray.push(i);
-        })
-        currentWordNumber = trueArray[Math.floor(Math.random()*trueArray.length)];
-      }
-      
-    }
-
-    switch (nextQuestionType) {
-      case 0: 
-        questionExample();
-        break;
-      case 1: 
-        questiontoKorean();
-        break;
-      case 2: 
-        questiontoEnglish();
-        break;
-      case 3: 
-        questionSynonym();
-        break;
-    }
-    answerInput.placeholder = currentHint;
-
-  }
-
-  var questionText = document.getElementById("questionText");
-  var currentAnswer = "";
-  var currentHint = "";
-  var multiAnswer = false
-
-  function questionExample() {
-    let word = wordSplit[currentWordNumber][0];
-    let example = wordSplit[currentWordNumber][4];
-    let exampleQuestion = example.split("'");
-    questionText.innerText = exampleQuestion[0] + "' '" + exampleQuestion[2];
-    currentAnswer = exampleQuestion[1];
-    currentHint = currentAnswer[0];
-    questionText.innerText += " ( " + currentHint + " )";
-
-  }
-
-  function questiontoKorean() {
-    let word = wordSplit[currentWordNumber][0];
-    let meaning = wordSplit[currentWordNumber][1];
-    questionText.innerText = word + " 의 뜻은?";
-    currentAnswer = meaning;
-    currentHint = "";
-
-  }
-
-  function questiontoEnglish() {  
-    let word = wordSplit[currentWordNumber][0];
-    let meaning = wordSplit[currentWordNumber][1];
-    let meaningSplit = meaning.split(",");
-    questionText.innerText = meaningSplit[Math.floor(meaningSplit.length * Math.random())] + " 은 영어로?";
-    currentAnswer = word;
-    currentHint = word[0];
-    questionText.innerText += " ( " + currentHint + " )";
-  }
-
-  function questionSynonym() {
-    let word = wordSplit[currentWordNumber][0];
-    let synonym = wordSplit[currentWordNumber][2];
-    let antonym = wordSplit[currentWordNumber][3];
-    let rand = Math.floor(Math.random()*2);
-    if (synonym.length == 0) rand = 1;
-    else if (antonym.length == 0) rand = 0;
-    if (rand == 0)  {
-      questionText.innerText = word + "의 유의어는?";
-      currentAnswer = synonym;
-      let hintText = "";
-      let synonymSplit = synonym.split(",");
-      synonymSplit.forEach((s) => {
-        hintText += s[0] + ", "
-      })
-      hintText = hintText.substring(0, hintText.length - 2) 
-      currentHint = hintText;
-    }
-    else {
-      questionText.innerText = word + "의 반의어는?";
-      currentAnswer = antonym;
-      let hintText = "";
-      let antonymSplit = antonym.split(",");
-      antonymSplit.forEach((s) => {
-        hintText += s[0] + ", "
-      })
-      hintText = hintText.substring(0, hintText.length - 2) 
-      currentHint = hintText;
-    }
-    questionText.innerText += " ( " + currentHint + " )";
-  }
-
-  var attempt = 0;
-  var correct = 0;
-  var skipped = 0;
-  var combo = 0;
-  var comboLast = 0;
-  var lastWordNumber = 0;
-
-  function textEntered() {
-    if (!answerInput) return;
-    let input = answerInput.value;
-    answerInput.value = "";
-
-    if (currentAnswer == "-") {
-      chooseQuestion();
-      return;
-    }
-    //답 확인, 새 문제
-    
-    attempt++;
-    lastWordNumber = currentWordNumber;
-
-    answers = currentAnswer.replace(" ", "").replace("[\(\[].*?[\)\]]", "").split(/[,.]/);
-
-    if (answers.includes(input.replace(" ", ""))) {
-      correct++;
-      document.getElementById("grading").innerText = "정답입니다! ( " + currentAnswer + " )";
-      if (wrongList.includes(currentWordNumber)) {
-        wrongList.splice(wrongList.indexOf(currentWordNumber),1);
-      }
-      combo++;
-    }
-
-    else {
-      document.getElementById("grading").innerText = "오답입니다. (입력: " + input + " / 답: " + currentAnswer + ")";
-      if (!wrongList.includes(currentWordNumber)) wrongList.push(currentWordNumber);
-      comboLast = combo;
-      combo = 0;
-      
-    }
-
-    let statMessage = "맞은 문제 수: " + correct + " / " + attempt + "+" + skipped + " ( " + combo + " 콤보";
-    if (combo >= 5) statMessage += "!";
-    if (combo >= 10) statMessage += "!";
-    statMessage += " )";
-    document.getElementById("stats").innerText = statMessage;
-
-    document.getElementById("addMessage").innerText = " ";
-
-    chooseQuestion();
-    updateWrong();
-
-  }
-
-  var wordList = document.getElementById("wordList");
-
-  var listSize = 10;
-  function shortList() {
-    if (listSize > 10) listSize -= 5;
-    wordList.cols = listSize*5-3 + "";
-    wordList.rows = listSize + "";
-  }
-
-  function longList() {
-    if (listSize < 20) listSize += 5;
-    wordList.cols = listSize*5-3 + "";
-    wordList.rows = listSize + "";
-  }
-
-  function forceCorrect() {
-    if (currentAnswer == "-") {
-      chooseQuestion();
-      return;
-    }
-    if (!wrongList.includes(lastWordNumber)) return;
-    wrongList.splice(wrongList.indexOf(lastWordNumber),1);
-    correct++;
-    combo = comboLast;
-    combo++;
-
-    let statMessage = "맞은 문제 수: " + correct + " / " + attempt + "+" + skipped + " ( " + combo + " 콤보";
-    if (combo >= 5) statMessage += "!";
-    if (combo >= 10) statMessage += "!";
-    statMessage += " )";
-    document.getElementById("stats").innerText = statMessage;
-
-    document.getElementById("addMessage").innerText = "정답 처리되었습니다.";
-
-    updateWrong();
-  }
-
-  function skipQuestion() {
-    if (currentAnswer == "-") {
-      chooseQuestion();
-      return;
-    }
-    skipped++;
-
-    let statMessage = "맞은 문제 수: " + correct + " / " + attempt + "+" + skipped + " ( " + combo + " 콤보";
-    if (combo >= 5) statMessage += "!";
-    if (combo >= 10) statMessage += "!";
-    statMessage += " )";
-    document.getElementById("stats").innerText = statMessage;
-    
-    document.getElementById("addMessage").innerText = "스킵되었습니다.";
-
-
-    chooseQuestion();
-  }
-
-  function resetScore() {
-    document.getElementById("grading").innerText = "(정답 여부)"
-    wrongList.length = 0;
-    updateWrong();
-    document.getElementById("stats").innerText = "맞은 문제 수: 0 / 0"
-    attempt = 0;
-    correct = 0;
-    skipped = 0;
-    combo = 0;
-    comboLast = 0;
-    lastWordNumber = 0;
-
-  }
-
-  const baseWordList = document.getElementById("wordList").value
-  function resetWord() {
-    document.getElementById("wordList").value = baseWordList
-  }
-
-
-
-</script>
-
-
-    </div>
-</article>
-
-    
-    <footer class="footer">
-        <section class="footer__about">
-                <p class="footer__about__copyright"></p>
-                
-                <span class="footer__about__theme"><p>theme</p><a id="simplex-logo" href="https://github.com/andreondra/jekyll-theme-simplex" target="_blank"><img alt="Simplex theme logo" src="http://localhost:4000/assets/img/icons/simplex_logo.svg"/></a><p>by <a href="https://ondrej.golasowski.com/">golas</a></p></span>
-        </section>
-</footer>
-    
-    <script src="http://localhost:4000/assets/js/jquery.slim.min.js"></script>
-<script src="http://localhost:4000/assets/js/lity.min.js"></script>
-<script src="http://localhost:4000/assets/js/tools.js"></script>
-</body>
-</html>
