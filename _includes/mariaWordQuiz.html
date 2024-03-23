@@ -259,15 +259,15 @@
 
   function textEntered() {
     if (!answerInput) return;
-    else if (answerInput == '1') {
+    let input = answerInput.value;
+    if (input == '1') {
       forceCorrect()
       return;
     }
-    else if (answerInput == '2') {
+    else if (input == '2') {
       skipQuestion()
       return;
     }
-    let input = answerInput.value;
     answerInput.value = "";
 
     if (currentAnswer == "-") {
