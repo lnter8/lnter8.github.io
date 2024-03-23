@@ -271,7 +271,7 @@
     attempt++;
     lastWordNumber = currentWordNumber;
 
-    answers = currentAnswer.replace(" ", "").replace("[\(\[].*?[\)\]]", "").split(/[,.]/);
+    answers = currentAnswer.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/);
 
     if (answers.includes(input.replace(" ", ""))) {
       correct++;
