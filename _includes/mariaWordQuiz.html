@@ -260,6 +260,7 @@
   function textEntered() {
     if (!answerInput) return;
     let input = answerInput.value;
+    answerInput.value = "";
     if (input == '1') {
       forceCorrect()
       return;
@@ -268,7 +269,7 @@
       skipQuestion()
       return;
     }
-    answerInput.value = "";
+    
 
     if (currentAnswer == "-") {
       chooseQuestion();
