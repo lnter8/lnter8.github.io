@@ -56,7 +56,7 @@ allocate/할당하다, 배치하다///
 manipulate/조종하다, 조작하다///
 valid/타당한, 유효한, 효과적인///
 virtual/사실상의, 가상의///
-derive/유래하다, 추론하다
+derive/유래하다, 추론하다///
 eliminate/제거하다, 없애다///
 dominate/지배적인, 우세한, 두드러진///
 moderate/중간의, 온건한, 완화하다, 조정하다///
