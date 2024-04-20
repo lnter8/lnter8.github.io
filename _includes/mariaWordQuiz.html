@@ -214,8 +214,8 @@
     let meaningSplit = meaning.split(",");
     questionText.innerText = meaningSplit[Math.floor(meaningSplit.length * Math.random())] + " 은 영어로?";
     currentAnswer = word;
-    currentHint = word[0];
-    questionText.innerText += " ( " + currentHint + " )";
+    //currentHint = word[0];
+    //questionText.innerText += " ( " + currentHint + " )";
   }
 
   function questionSynonym() {
@@ -282,9 +282,9 @@
 
     answers = currentAnswer.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/);
 
-    if (answers.includes(input.replace(" ", ""))) {
+    if (answers.includes(input.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/))) {
       correct++;
-      document.getElementById("grading").innerText = "정답입니다! ( " + currentAnswer + " )";
+      document.getElementById("grading").innerText = "정답입니다! ( " + wordSplit[currentWordNumber][0] + " : " + currentAnswer + " )";
       if (wrongList.includes(currentWordNumber)) {
         wrongList.splice(wrongList.indexOf(currentWordNumber),1);
       }
