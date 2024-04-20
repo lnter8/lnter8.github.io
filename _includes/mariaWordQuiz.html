@@ -214,6 +214,7 @@
     let meaningSplit = meaning.split(",");
     questionText.innerText = meaningSplit[Math.floor(meaningSplit.length * Math.random())] + " 은 영어로?";
     currentAnswer = word;
+    currentHint = "";
     //currentHint = word[0];
     //questionText.innerText += " ( " + currentHint + " )";
   }
@@ -281,8 +282,10 @@
     lastWordNumber = currentWordNumber;
 
     answers = currentAnswer.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/);
-
-    if (answers.includes(input.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/))) {
+    inputs = input.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/)
+    
+    
+    if (inputs.every((e) => answers.includes(e))) {
       correct++;
       document.getElementById("grading").innerText = "정답입니다! ( " + wordSplit[currentWordNumber][0] + " : " + currentAnswer + " )";
       if (wrongList.includes(currentWordNumber)) {
