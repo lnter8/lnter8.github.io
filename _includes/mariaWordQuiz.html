@@ -287,7 +287,7 @@
     
     if (inputs.every((e) => answers.includes(e))) {
       correct++;
-      document.getElementById("grading").innerText = "정답입니다! ( " + wordSplit[currentWordNumber][0] + " : " + currentAnswer + " )";
+      document.getElementById("grading").innerText = "정답입니다! ( " + wordSplit[currentWordNumber][0] + " : " + wordSplit[currentWordNumber][1] + " )";
       if (wrongList.includes(currentWordNumber)) {
         wrongList.splice(wrongList.indexOf(currentWordNumber),1);
       }
