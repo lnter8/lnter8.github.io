@@ -212,7 +212,7 @@
     let word = wordSplit[currentWordNumber][0];
     let meaning = wordSplit[currentWordNumber][1];
     let meaningSplit = meaning.split(",");
-    questionText.innerText = meaningSplit[Math.floor(meaningSplit.length * Math.random())] + " 은 영어로?";
+    questionText.innerText = meaningSplit[Math.floor(meaningSplit.length * Math.random())] + " 에 해당하는 단어는?";
     currentAnswer = word;
     currentHint = "";
     //currentHint = word[0];
