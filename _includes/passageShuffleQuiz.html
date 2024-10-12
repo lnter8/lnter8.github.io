@@ -4,14 +4,14 @@
   function startUp() {
 
     var answerInput = document.getElementById("answerInput");
-    var wordSplit = [];
-    var wrongList = [];
-    var questionOrder = [];
+    
     loadList();
 
   }
 
-  
+  var wordSplit = [];
+  var wrongList = [];
+  var questionOrder = [];
   
   answerInput.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
@@ -63,10 +63,10 @@
   function loadList() {
     wordSplit = [];
     let rawWordList = document.getElementById("wordList").value;
-    wordSplit = rawWordList.split("\n"); // wtf regex: split at \n
+    let wordSplit = rawWordList.split("\n"); // wtf regex: split at \n
 
 
-    document.getElementById("listLoaded").innerText = "로드 완료 (" + wordSplit.length +"개 성공, " + errorCount + "개 실패)";
+    document.getElementById("listLoaded").innerText = "로드 완료 (" + wordSplit.length +"개 성공";
     chooseQuestion();
   }
 
