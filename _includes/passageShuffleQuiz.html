@@ -168,13 +168,9 @@
     //답 확인, 새 문제
     
     attempt++;
-    lastWordNumber = currentWordNumber;
-
-    answers = currentAnswer.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/);
-    inputs = input.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/)
+    lastWordNumber = currentWordNumber;    
     
-    
-    if (inputs.every((e) => answers.includes(e))) {
+    if (input == currentAnswer) {
       correct++;
       document.getElementById("grading").innerText = "정답입니다!";
       if (wrongList.includes(currentWordNumber)) {
