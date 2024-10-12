@@ -63,7 +63,7 @@
   function loadList() {
     wordSplit = [];
     let rawWordList = document.getElementById("wordList").value;
-    let wordSplit = rawWordList.split("\n"); // wtf regex: split at \n
+    wordSplit = rawWordList.split("\n"); // wtf regex: split at \n
 
 
     document.getElementById("listLoaded").innerText = "로드 완료 (" + wordSplit.length +"개 성공";
