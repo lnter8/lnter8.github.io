@@ -1,0 +1,346 @@
+---
+layout: post
+title:  "영동 1-2 영어 지문 순서"
+date:   2024-10-11 12:30:21 +0900
+categories: [school]
+permalink: /school/1/2/club/englishShuffle
+---
+<head>
+<meta name="viewport" content="width=device-width*0.9, initial-scale=1.0">
+<style>
+  p { margin: 8px 0px 8px 0px; }
+</style>
+</head>
+
+정답과 정확히 같아야 정답으로 인식합니다. <br>
+복수정답은 인식하지 못합니다. <br>
+<br>
+
+<div> 
+  <p id="questionText">문제</p>
+  <input id="answerInput" type="text" style="width: 320px; font-size: 16px; height: 20px" placeholder=""> <button onclick="textEntered()">입력</button>
+  <p id="grading" style="word-wrap:break-word; width: 325px">(정답 여부)</p> 
+  <p id="wrongList" style="word-wrap:break-word; width: 325px">틀린 단어: X</p>
+  <button onclick="forceCorrect()">정답 처리</button> <button onclick="skipQuestion()">문제 스킵</button>
+  <p id="stats">맞은 문제 수: 0 / 0</p> 
+  <p id="addMessage"> </p>
+</div>
+
+<br>
+
+<div>
+  <p>이곳에서 시험 단어를 변경할 수 있습니다. </p> <p id="listLoaded"></p>
+<textarea id="wordList" cols="47" rows="10" placeholder="단어 목록">
+# <- 이 기호로 시작하거나 빈 줄은 인식하지 않습니다.
+# 이곳에서 지문을 확인, 추가, 삭제, 수정할 수 있습니다.
+One dynamic that can change dramatically in sport is the concept of the home­field advantage, in which perceived demands and resources seem to play a role. Under normal circumstances, the home ground would appear to provide greater perceived resources (fans, home field, and so on). However, researchers Roy Baumeister and Andrew Steinhilber were among the first to point out that these competitive factors can change; for example, the success percentage for home teams in the final games of a playoff or World Series seems to drop. Fans can become part of the perceived demands rather than resources under those circumstances. This change in perception can also explain why a team that’s struggling at the start of the year will often welcome a road trip to reduce perceived demands and pressures.
+Some deep-sea organisms are known to use bioluminescence as a lure, to attract prey with a little glow imitating the movements of their favorite fish, or like fireflies, as a sexual attractant to find mates. While there are many possible evolutionary theories for the survival value of bioluminescence, one of the most fascinating is to create a cloak of invisibility. The color of almost all bioluminescent molecules is blue-green, the same color as the ocean above. By self-glowing blue-green, the creatures no longer cast a shadow or create a silhouette, especially when viewed from below against the brighter waters above. Rather, by glowing themselves, they can blend into the sparkles, reflections, and scattered blue-green glow of sunlight or moonlight. Thus, they are most likely making their own light not to see, but to be un-seen.
+Many evolutionary biologists argue that humans developed language for economic reasons. We needed to trade, and we needed to establish trust in order to trade. Language is very handy when you are trying to conduct business with someone. Two early humans could not only agree to trade three wooden bowls for six bunches of bananas but establish rules as well. What wood was used for the bowls? Where did you get the bananas? That business deal would have been nearly impossible using only gestures and confusing noises, and carrying it out according to terms agreed upon creates a bond of trust. Language allows us to be specific, and this is where conversation plays a key role.
+The last two decades of research on the science of learning have shown conclusively that we remember things better, and longer, if we discover them ourselves rather than being told them. This is the teaching method practiced by physics professor Eric Mazur. He doesn’t lecture in his classes at Harvard. Instead, he asks students difficult questions, based on their homework reading, that require them to pull together sources of information to solve a problem. Mazur doesn’t give them the answer; instead, he asks the students to break off into small groups and discuss the problem among themselves. Eventually, nearly everyone in the class gets the answer right, and the concepts stick with them because they had to find their own way to the answer.
+It is common to assume that creativity concerns primarily the relation between actor(creator) and artifact(creation). However, from a sociocultural standpoint, the creative act is never “complete” in the absence of a second position—that of an audience. While the actor or creator him/herself is the first audience of the artifact being produced, this kind of distantiation can only be achieved by internalizing the perspective of others on one’s work. This means that, in order to be an audience to your own creation, a history of interaction with others is needed. We exist in a social world that constantly confronts us with the “view of the other.” It is the view we include and blend into our own activity, including creative activity. This outside perspective is essential for creativity because it gives new meaning and value to the creative act and its product.
+Scientists believe that the frogs’ ancestors were water­dwelling, fishlike animals. The first frogs and their relatives gained the ability to come out on land and enjoy the opportunities for food and shelter there. But they still kept many ties to the water. A frog’s lungs do not work very well, and it gets part of its oxygen by breathing through its skin. But for this kind of “breathing” to work properly, the frog’s skin must stay moist. And so the frog must remain near the water where it can take a dip every now and then to keep from drying out. Frogs must also lay their eggs in water, as their fishlike ancestors did. And eggs laid in the water must develop into water creatures, if they are to survive. For frogs, metamorphosis thus provides the bridge between the water­dwelling young forms and the land­dwelling adults.
+Back in 1996, an American airline was faced with an interesting problem. At a time when most other airlines were losing money or going under, over 100 cities were begging the company to service their locations. However, that’s not the interesting part. What’s interesting is that the company turned down over 95 percent of those offers and began serving only four new locations. It turned down tremendous growth because  company leadership had set an upper limit for growth. Sure, its executives wanted to grow each year, but they didn’t want to grow too much. Unlike other famous companies, they wanted to set their own pace, one that could be sustained in the long term. By doing this, they established a safety margin for growth that helped them continue to thrive at a time when the other airlines were flailing.
+We’re often told that newborns and infants are comforted by rocking because this motion is similar to what they experienced in the womb, and that they must take comfort in this familiar feeling. This may be true; however, to date there are no convincing data that demonstrate a significant relationship between the amount of time a mother moves during pregnancy and her newborn’s response to rocking. Just as likely is the idea that newborns come to associate gentle rocking with being fed. Parents understand that rocking quiets a newborn, and they very often provide gentle, repetitive movement during feeding. Since the appearance of food is a primary reinforcer, newborns may acquire a fondness for motionbecause they have been conditioned through a process of associative learning.
+One of the main reasons that students may think they know the material, even when they don’t, is that they mistake familiarity for understanding. Here is how it works: You read the chapter once, perhaps highlighting as you go. Then later, you read the chapter again, perhaps focusing on the highlighted material. As you read it over, the material is familiar because you remember it from before, and this familiarity might lead you to think, “Okay, I know that.” The problem is that this feeling of familiarity is not necessarily equivalent to knowing the material and may be of no help when you have to come up with an answer on the exam. In fact, familiarity can often lead to errors on multiple‒choice exams because you might pick a choice that looks familiar, only to find later that it was something you had read, but it wasn’t really the best answer to the question.
+Say you normally go to a park to walk or work out. Maybe today you should choose a different park. Why? Well, who knows? Maybe it’s because you need the connection to the different energy in the other park. Maybe you’ll run into people there that you’ve never met before. You could make a new best friend simply by visiting a different park. You never know what great things will happen to you until you step outside the zone where you feel comfortable. If you’re staying in your comfort zone and you’re not pushing yourself past that same old energy, then you’re not going to move forward on your path. By forcing yourself to do something different, you’re awakening yourself on a spiritual level and you’re forcing yourself to do something that will benefit you in the long run. As they say, variety is the spice of life.
+Although technology has the potential to increase productivity, it can also have a negative impact on productivity. For example, in many office environments workers sit at desks with computers and have access to the internet. They are able to check their personal e-mails and use social media whenever they want to. This can stop them from doing their work and make them less productive. Introducing new technology can also have a negative impact on production when it causes a change to the production process or requires workers to learn a new system. Learning to use new technology can be time consuming and stressful for workers and this can cause a decline in productivity.
+Sensory nerves have specialized endings in the tissues that pick up a particular sensation. If, for example, you step on a sharp object such as a pin, nerve endings in the skin will transmit the pain sensation up your leg, up and along the spinal cord to the brain. While the pain itself is unpleasant, it is in fact acting as a protective mechanism for the foot. Within the brain, nerves will connect to the area that controls speech, so that you may well shout ‘ouch’ or something rather less polite. They will also connect to motor nerves that travel back down the spinal cord, and to the muscles in your leg that now contract quickly to lift your foot away from the painful object. Sensory and motor nerves control almost all functions in the body—from the beating of the heart to the movement of the gut, sweating and just about everything else.
+Whose story it is affects what the story is. Change the main character, and the focus of the story must also change. If we look at the events through another character’s eyes, we will interpret them differently. We’ll place our sympathies with someone new. When the conflict arises that is the heart of the story, we will be praying for a different outcome. Consider, for example, how the tale of Cinderella would shift if told from the viewpoint of an evil stepsister. Gone with the Wind is Scarlett O’Hara’s story, but what if we were shown the same events from the viewpoint of Rhett Butler or Melanie Wilkes?
+Developing a personal engagement with poetry brings a number of benefits to you as an individual, in both a personal and a professional capacity. Writing poetry has been shown to have physical and mental benefits, with expressive writing found to improve immune system and lung function, diminish psychological distress, and enhance relationships. Poetry has long been used to aid different mental health needs, develop empathy, and reconsider our relationship with both natural and built environments. Poetry is also an incredibly effective way of actively targeting the cognitive development period, improving your productivity and scientific creativity in the process. In short, poetry has a lot to offer, if you give it the opportunity to do so.
+The fast­paced evolution of Information and Communication Technologies (ICTs) has radically transformed the dynamics and business models of the tourism and hospitality industry. This leads to new levels/forms of competitiveness among service providers and transforms the customer experience through new services. Creating unique experiences and providing convenient services to customers leads to satisfaction and, eventually, customer loyalty to the service provider or brand (i.e., hotels). In particular, the most recent technological boost received by the tourism sector is represented by mobile applications. Indeed, empowering tourists with mobile access to services such as hotel reservations, airline ticketing, and recommendations for local attractions generates strong interest and considerable profits.
+According to Marguerite La Caze, fashion contributes to our lives and provides a medium for us to develop and exhibit important social virtues. Fashion may be beautiful, innovative, and useful; we can display creativity and good taste in our fashion choices. And in dressing with taste and care, we represent both self­respect and a concern for the pleasure of others. There is no doubt that fashion can be a source of interest and pleasure which links us to each other. Although the fashion industry developed first in Europe and America, today it is an international and highly globalized industry. That is, fashion provides a sociable aspect along with opportunities to imagine oneself differently―to try on different identities.
+Who hasn’t used a cup of coffee to help themselves stay awake while studying? Mild stimulants commonly found in tea, coffee, or sodas possibly make you more attentive and, thus, better able to remember. However, you should know that stimulants are as likely to have negative effects on memory as they are to be beneficial. Even if they could improve performance at some level, the ideal doses are currently unknown. If you are wide awake and well­rested, mild stimulation from caffeine can do little to further improve your memory performance. Indeed, if you have too much of a stimulant, you will become nervous, find it difficult to sleep, and your memory performance will suffer.
+Internet activist Eli Pariser noticed how online search algorithms encourage our human tendency to grab hold of everything that confirms the beliefs we already hold, while quietly ignoring information that doesn’t match those beliefs. We set up a so-called “filter-bubble” around ourselves, where we are constantly exposed only to that material that we agree with. We are never challenged, never giving ourselves the opportunity to acknowledge the existence of diversity and difference. In the best case, we become naive and sheltered, and in the worst, we become radicalized with extreme views, unable to imagine life outside our particular bubble. The results are disastrous: intellectual isolation and the real distortion that comes with believing that the little world we create for ourselves is the world.
+The Zeigarnik effect is commonly referred to as the tendency of the subconscious mind to remind you of a task that is incomplete until that task is complete. Bluma Zeigarnik was a Lithuanian psychologist who wrote in the 1920s about the effects of leaving tasks incomplete. She noticed the effect while watching waiters serve in a restaurant. The waiters would remember an order, however complicated, until the order was complete, but they would later find it difficult to remember the order. Zeigarnik did further studies giving both adults and children puzzles to complete then interrupting them during some of the tasks. The results showed that both adults and children remembered the tasks that hadn’t been completed because of the interruptions better than the ones that had been completed.
+Health and the spread of disease are very closely linked to how we live and how our cities operate. The good news is that cities are incredibly resilient. Many cities have experienced epidemics in the past and have not only survived, but advanced. The nineteenth and early­twentieth centuries saw destructive outbreaks of cholera, typhoid, and influenza in European cities. Doctors such as Jon Snow, from England, and Rudolf Virchow, of Germany, saw the connection between poor living conditions, overcrowding, sanitation, and disease. A recognition of this connection led to the replanning and rebuilding of cities to stop the spread of epidemics.In the mid­nineteenth century, London’s pioneering sewer system, which still serves it today, was built as a result of understanding the importance of clean water in stopping the spread of cholera.
+Today’s music business has allowed musicians to take matters into their own hands. Gone are the days of musicians waiting for a gatekeeper (someone who holds power and prevents you from being let in) at a label or TV show to say they are worthy of the spotlight.In today’s music business, you don’t need to ask for permission to build a fanbase and you no longer need to pay thousands of dollars to a company to do it. Every day, musicians are getting their music out to thousands of listeners without any outside help. They simply deliver it to the fans directly, without asking for permission or outside help to receive exposure or connect with thousands of listeners.
+The Barnum Effect is the phenomenon where someone reads or hears something very general but believes that it applies to them. These statements appear to be very personal on the surface but in fact, they are true for many.  Human psychology allows us to want to believe things that we can identify with on a personal level and even seek information where it doesn’t necessarily exist, filling in the blanks with our imagination for the rest. This is the principle that horoscopes rely on, offering data that appears to be personal but probably makes sense to countless people. Since the people reading them want to believe the information so badly, they will search for meaning in their lives that make it true.
+In a single week, the sun delivers more energy to our planet than humanity has used through the burning of coal, oil, and natural gas through all of human history. And the sun will keep shining on our planet for billions of years. Our challenge isn’t that we’re running out of energy. t’s that we have been focused on the wrong source―the small, finite one that we’re using up. Indeed, all the coal, natural gas, and oil we use today is just solar energy from millions of years ago, a very tiny part of which was preserved deep underground. Our challenge, and our opportunity, is to learn to efficiently and cheaply use the much more abundant source that is the new energy striking our planet each day from the sun.
+</textarea>
+  <br>
+  <button onclick="shortList()">축소</button> <button onclick="longList()">확대</button> <button onclick="loadList()">로드</button> 
+</div>
+
+<br><br>
+
+<button onclick="resetScore()">점수 리셋</button> <button onclick="resetWord()">단어 리셋</button>
+
+<script>
+  document.addEventListener('DOMContentLoaded', startUp);
+
+  function startUp() {
+    loadList();
+  }
+
+  var answerInput = document.getElementById("answerInput");
+  
+  answerInput.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      if (answerInput.value !== "") textEntered();
+
+    }
+    
+  });
+
+  var questionOrder = [];
+  function shuffleQuestion() {
+    questionOrder = [];
+    for (var i = 0; i < wordSplit.length; i++) {
+      questionOrder.push(i);
+    }
+    let temp;
+    for (var i = 0; i < wordSplit.length-1; i++) {
+      var j = Math.floor(Math.random()*(wordSplit.length-i)+i)
+      temp = questionOrder[i];
+      questionOrder[i] = questionOrder[j]
+      questionOrder[j] = temp;
+    }
+  }
+
+  function nextQuestionNumber() {
+    if (wordSplit.length == 0) return -1;
+    if (questionOrder.length == 0) shuffleQuestion();
+    let next = questionOrder.pop();
+    return next;
+  }
+
+
+  function updateWrong() {
+    let wrongText = "틀린 단어: ";
+    if (wrongList.length == 0) {
+      wrongText += "X, ";
+    }
+    wrongList.forEach((v) => {
+      wrongText += v+1 + ", ";
+    })
+    document.getElementById("wrongList").innerText = wrongText.substring(0,wrongText.length-2);
+    return;
+  }
+
+
+  // input word stuff
+  // 단어/뜻,뜻2/유의어/반의어/예문(단어:'')
+  var wordSplit = [];
+  function loadList() {
+    wordSplit = [];
+    let rawWordList = document.getElementById("wordList").value;
+    let wordSplit = rawWordList.split("\n"); // wtf regex: split at \n
+
+
+    document.getElementById("listLoaded").innerText = "로드 완료 (" + wordSplit.length +"개 성공, " + errorCount + "개 실패)";
+    chooseQuestion();
+  }
+
+  function noQuestionAvailable() {
+    document.getElementById("questionText").innerText = "-"; 
+    answerInput.placeholder = "-"; 
+    currentAnswer = "-";
+    document.getElementById("addMessage").innerText = "낼 문제가 없습니다. 설정과 단어를 확인하세요.";
+  }
+
+  var currentWordNumber = 0;
+  function chooseQuestion() {
+
+    currentWordNumber = nextQuestionNumber();
+    if (currentWordNumber == -1) {
+      noQuestionAvailable();
+      return;
+    }
+
+    questiontoEnglish()
+    answerInput.placeholder = currentHint;
+
+  }
+
+  var questionText = document.getElementById("questionText");
+  var currentAnswer = "";
+  var currentHint = "";
+
+  function shuffleSentences(passage) {
+    // Split the passage by sentence delimiters (period, exclamation, question mark)
+    let sentences = passage.match(/[^.!?]+[.!?]+/g) || []; 
+    
+    // Create an array to track the original indices
+    let originalOrder = sentences.map((_, index) => index + 1);
+    
+    // Shuffle sentences and save the shuffle order
+    let shuffledSentences = [...sentences];
+    let shuffledOrder = [...originalOrder];
+    
+    for (let i = shuffledSentences.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        
+        // Swap sentences
+        [shuffledSentences[i], shuffledSentences[j]] = [shuffledSentences[j], shuffledSentences[i]];
+        
+        // Swap original indices to track the order
+        [shuffledOrder[i], shuffledOrder[j]] = [shuffledOrder[j], shuffledOrder[i]];
+    }
+
+    // Find the reverse of the shuffle order
+    let revertOrder = new Array(shuffledOrder.length);
+    shuffledOrder.forEach((val, index) => {
+        revertOrder[val - 1] = index + 1;
+    });
+
+    // Return the shuffled sentences and the revert order
+    return {
+        shuffledSentences: shuffledSentences.join('\n\n'),
+        revertOrder: revertOrder
+    };
+  }
+
+
+  function questiontoEnglish() {  
+    let passage = wordSplit[currentWordNumber];
+    shuffle = shuffleSentences(passage)
+    questionText.innerText = shuffle.shuffledSentences;
+    currentAnswer = shuffle.revertOrder;
+    currentHint = "";
+    //currentHint = word[0];
+    //questionText.innerText += " ( " + currentHint + " )";
+  }
+
+  var attempt = 0;
+  var correct = 0;
+  var skipped = 0;
+  var combo = 0;
+  var comboLast = 0;
+  var lastWordNumber = 0;
+
+  function textEntered() {
+    if (!answerInput) return;
+    let input = answerInput.value;
+    answerInput.value = "";
+    if (input == '!') {
+      forceCorrect()
+      return;
+    }
+    else if (input == '?') {
+      skipQuestion()
+      return;
+    }
+    
+
+    if (currentAnswer == "-") {
+      chooseQuestion();
+      return;
+    }
+    //답 확인, 새 문제
+    
+    attempt++;
+    lastWordNumber = currentWordNumber;
+
+    answers = currentAnswer.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/);
+    inputs = input.replace(/\s/g, "").replace(/[\(\[].*?[\)\]]/g, "").split(/[,.]+/)
+    
+    
+    if (inputs.every((e) => answers.includes(e))) {
+      correct++;
+      document.getElementById("grading").innerText = "정답입니다! ( " + wordSplit[currentWordNumber][0] + " : " + wordSplit[currentWordNumber][1] + " )";
+      if (wrongList.includes(currentWordNumber)) {
+        wrongList.splice(wrongList.indexOf(currentWordNumber),1);
+      }
+      combo++;
+    }
+
+    else {
+      document.getElementById("grading").innerText = "오답입니다. (입력: " + input + " / 답: " + currentAnswer + ")";
+      if (!wrongList.includes(currentWordNumber)) wrongList.push(currentWordNumber);
+      comboLast = combo;
+      combo = 0;
+      
+    }
+
+    let statMessage = "맞은 문제 수: " + correct + " / " + attempt + "+" + skipped + " ( " + combo + " 콤보";
+    if (combo >= 5) statMessage += "!";
+    if (combo >= 10) statMessage += "!";
+    statMessage += " )";
+    document.getElementById("stats").innerText = statMessage;
+
+    document.getElementById("addMessage").innerText = " ";
+
+    chooseQuestion();
+    updateWrong();
+
+  }
+
+  var wordList = document.getElementById("wordList");
+
+  var listSize = 10;
+  function shortList() {
+    if (listSize > 10) listSize -= 5;
+    wordList.cols = listSize*5-3 + "";
+    wordList.rows = listSize + "";
+  }
+
+  function longList() {
+    if (listSize < 20) listSize += 5;
+    wordList.cols = listSize*5-3 + "";
+    wordList.rows = listSize + "";
+  }
+
+  function forceCorrect() {
+    if (currentAnswer == "-") {
+      chooseQuestion();
+      return;
+    }
+    if (!wrongList.includes(lastWordNumber)) return;
+    wrongList.splice(wrongList.indexOf(lastWordNumber),1);
+    correct++;
+    combo = comboLast;
+    combo++;
+
+    let statMessage = "맞은 문제 수: " + correct + " / " + attempt + "+" + skipped + " ( " + combo + " 콤보";
+    if (combo >= 5) statMessage += "!";
+    if (combo >= 10) statMessage += "!";
+    statMessage += " )";
+    document.getElementById("stats").innerText = statMessage;
+
+    document.getElementById("addMessage").innerText = "정답 처리되었습니다.";
+
+    updateWrong();
+  }
+
+  function skipQuestion() {
+    if (currentAnswer == "-") {
+      chooseQuestion();
+      return;
+    }
+    skipped++;
+
+    let statMessage = "맞은 문제 수: " + correct + " / " + attempt + "+" + skipped + " ( " + combo + " 콤보";
+    if (combo >= 5) statMessage += "!";
+    if (combo >= 10) statMessage += "!";
+    statMessage += " )";
+    document.getElementById("stats").innerText = statMessage;
+    
+    document.getElementById("addMessage").innerText = "스킵되었습니다.";
+
+
+    chooseQuestion();
+  }
+
+  function resetScore() {
+    document.getElementById("grading").innerText = "(정답 여부)"
+    wrongList.length = 0;
+    updateWrong();
+    document.getElementById("stats").innerText = "맞은 문제 수: 0 / 0"
+    attempt = 0;
+    correct = 0;
+    skipped = 0;
+    combo = 0;
+    comboLast = 0;
+    lastWordNumber = 0;
+
+  }
+
+  const baseWordList = document.getElementById("wordList").value
+  function resetWord() {
+    document.getElementById("wordList").value = baseWordList
+  }
+
+
+
+</script>
